@@ -33,5 +33,10 @@ img {
     img {
        height: 483px;
        width: 50px;
+       margin: 30px 20px 10px;
+    /* left: 20px; 
+    }
+    body, #one {
+        background: linear-gradient(0.25turn, rgb(17, 97, 216), rgb(31, 219, 219), rgb(27, 17, 170));
     }
 }
