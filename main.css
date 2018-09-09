@@ -1,6 +1,25 @@
+body, #one {
+    background: linear-gradient(0.25turn, rgb(17, 97, 216), rgb(31, 219, 219), rgb(27, 17, 170));
+    /* right: 30px;
+    left: 15px; */
+    /* left: 20px; */
+}
+
+
 img {
-    height: 800px;
-    width: 200px;
+   
+    /* color:  blue; */
+    margin: 30px 20px 10px;
+    /* left: 20px; */
+    height: 750px;
+    /* width: 70%; */
+    /* right: 30px; */
+    
+}
+
+.carousel-item {
+    /* background: rgb(34, 72, 148);
+    background-color: rgb(35, 76, 156); */
 }
 
 @media all and (min-width: 481px) and (max-width: 768px) {
@@ -12,7 +31,7 @@ img {
 
 @media all and (max-width: 480px) {
     img {
-       height: 475px;
+       height: 483px;
        width: 50px;
     }
 }
