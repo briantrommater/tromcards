@@ -31,7 +31,7 @@ img {
 @media all and (max-width: 480px) {
     img {
        height: 453px;
-       width: 50px;
+       width: 45px;
        margin: 30px 20px 10px;
     /* left: 20px; 
     }
