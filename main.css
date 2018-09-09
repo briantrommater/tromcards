@@ -32,8 +32,8 @@ img {
     img {
        height: 453px;
        width: 45px;
-       margin: 10px;
-       right: 10px;
+       margin: 7px;
+       right: 7px;
     }
     body, #one {
         background: linear-gradient(0.25turn, rgb(17, 97, 216), rgb(31, 219, 219), rgb(27, 17, 170));
