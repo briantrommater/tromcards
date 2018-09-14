@@ -1,12 +1,10 @@
 # cards
 
-i'm just floating some card trick/project ideas so trying to make a cool deck.
+i'm just floating some card trick/final project ideas. 
 
-i'm trying to make this a learning app eventaully but i need it to work perfect mobile
+first and foremost, i'm trying to make a cool deck.
 
-and deal a fair deck of cards that look cool!
-
-it looks okay on an ipone 8.
+it's gonna be a memory game that trains people of all ages to improve their memory.
 
 you can visit this site at
 
