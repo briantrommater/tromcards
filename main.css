@@ -1,24 +1,38 @@
-body, #one {
-    background: linear-gradient(0.25turn, rgb(17, 97, 216), rgb(31, 219, 219), rgb(27, 17, 170));
-    right: 10px;
-    /* left: 5px; */
-    /* left: 20px; */
+body {
+    background: linear-gradient(-45deg, #0099ff, #66ff33, #0099ff ,#66ff33);
+    background-size: 200% 200%;
+    -webkit-animation: Gradient 3s ease infinite;
+    animation: Gradient 3s ease infinite;
+
 }
 
-
-img {
-   
-    /* color:  blue; */
-    margin: 30px 20px 10px;
-    /* left: 20px; */
-    height: 700px;
-    right: 30px;
-    
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
-.carousel-item {
-    /* background: rgb(34, 72, 148);
-    background-color: rgb(35, 76, 156); */
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#one {
+    width: 50%;
+    margin: 0 auto;
 }
 
 @media all and (min-width: 481px) and (max-width: 768px) {
