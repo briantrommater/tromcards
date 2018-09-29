@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(-45deg, #0099ff, #66ff33, #0099ff ,#66ff33);
+    background: linear-gradient(-75deg, rgb(62, 185, 62),  rgb(129, 28, 187), rgb(38, 151, 189), white);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
@@ -30,16 +30,9 @@ body {
 	}
 }
 
-#one {
+#whole {
     width: 72%;
     margin: 0 auto;
-}
-
-@media all and (min-width: 481px) and (max-width: 768px) {
-    img {
-        height: 400px;
-        width: 100px;
-    }
 }
 
 @media all and (max-width: 480px) {
@@ -49,7 +42,41 @@ body {
        margin: 7px;
        right: 7px;
     }
-    body, #one {
-        background: linear-gradient(0.25turn, rgb(17, 97, 216), rgb(31, 219, 219), rgb(27, 17, 170));
+    body {
+        background: linear-gradient(-25deg, rgb(62, 185, 62), rgb(38, 151, 189), rgb(129, 28, 187) , white);
+        background-size: 200% 200%;
+        -webkit-animation: Gradient 3s ease infinite;
+        animation: Gradient 3s ease infinite;
+    
     }
+    
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
 }
