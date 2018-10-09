@@ -46,7 +46,7 @@ img {
         width: 85%;
         margin: 0 auto;
     }
-
+    
     img {
        height: 453px;
        width: 45px;
@@ -55,7 +55,7 @@ img {
     }
 
     body {
-        background: linear-gradient(to right, #00FF2D, white, yellow);
+        background: linear-gradient(to right, #00FF2D, yellow);
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
         animation: Gradient 3s ease infinite;
