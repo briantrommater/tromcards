@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(-75deg, rgb(62, 185, 62),  rgb(129, 28, 187), rgb(38, 151, 189), white);
+    background: linear-gradient(-75deg, rgb(62, 185, 62),  rgb(12, 185, 84), rgb(213, 235, 16), white);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
@@ -30,8 +30,14 @@ body {
 	}
 }
 
+img {
+    height: 753px;
+    margin: 7px;
+    right: 7px;
+ }
+
 #whole {
-    width: 72%;
+    width: 42%;
     margin: 0 auto;
 }
 
