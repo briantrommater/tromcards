@@ -1,11 +1,18 @@
 # cards
 
-i'm just floating some card trick/final project ideas. 
+to do:
 
-first and foremost, i'm trying to make a cool deck.
+1) 4 start buttons
+2) 4 buttons at end of game
+3) then 13 buttons
+4) Win/lose screen/sound/background
+5) training images
+6) jQ
+7) es6
+8) see how triple game worked
+9) get sound effects on new card
 
-it's gonna be a memory game that trains people of all ages to improve their memory.
 
-you can visit this site at
+
 
 https://briantrommater.github.io/cards/
