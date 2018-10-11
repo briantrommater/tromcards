@@ -117,7 +117,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 function guessCard(card) {
     console.log(card);
     if (missingCard == card) {
-            console.log('win')
+        document.querySelector("#mario").play();
     }
     else {
         console.log('lose')
