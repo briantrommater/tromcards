@@ -1,6 +1,6 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 
-// });
+});
 
 let deckOfCards = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', '4S', '4D',
 '5C', '5H', '5S', '5D', '6C', '6H', '6S', '7C', '7H', '7S', '7D', '8C', '8H', '8S', '8D',
@@ -19,19 +19,35 @@ let halfDeckSH = ['2S', '3S', '4S', '5S', '6S', '7S', '8S', '9S', '10S', 'JS', '
 
 let clonedCards = [];
 
+let missingCard;
+
 
 
 function quarter() {
     clonedCards = [...diamonds];
     removeCard()
+    let theseDisappear = document.getElementsByClassName("start");
+    for (let thing of theseDisappear) {
+        thing.style.display = "none";
+    }
 }
 function half() {
-    clonedCards = [...halfDeckRed];
+    clonedCards = [...halfDeckSH];
     removeCard()
+    let theseDisappear = document.getElementsByClassName("start");
+    for (let thing of theseDisappear) {
+        thing.style.display = "none";
+    }
+
 }
 function full() {
     clonedCards = [...deckOfCards];
     removeCard()
+    let theseDisappear = document.getElementsByClassName("start");
+    for (let thing of theseDisappear) {
+        thing.style.display = "none";
+    }
+
 }
 
 removeCard()
@@ -39,8 +55,9 @@ removeCard()
 function removeCard() {
     //remove a random card
     let randomCardIdx = Math.floor(Math.random() * clonedCards.length);
-    clonedCards.splice(randomCardIdx, 1);
-
+    missingCard = clonedCards.splice(randomCardIdx, 1);
+    //store card 
+    console.log(missingCard.join());
     // shuffle the cards
     let shuffled = shuffle(clonedCards);
 
@@ -76,22 +93,51 @@ function createCard(img_src) {
     $('.carousel-inner').append(card);
 }
 
-function playClip(){
-    if($('.carousel-item').eq(1).hasClass('shuffle')){
-         $(this).next().get(0).play();
+function noShowCarousel() {
+    if ($('.carousel-item').length === 11) {
+        $('.carousel').carousel('dispose');
+        $('.carousel-inner').empty();
     }
 }
 
-window.setInterval(playClip,1500);
+
+$('.carousel').on('slid.bs.carousel', function (e) {
+    let num_cards = $('.carousel-item').length
+    if ( (num_cards - 1) === e.to) {
+        $('.carousel-inner').empty();
+        let fiftyTwoAppear = document.getElementsByClassName("cards");
+            for (let stuff of fiftyTwoAppear) {
+            stuff.style.display = "block";
+            }
+    }
+})
+
+
+//
+function guessCard(card) {
+    console.log(card);
+    if (missingCard == card) {
+            console.log('win')
+    }
+    else {
+        console.log('lose')
+        document.querySelector("#pacman").play();
+    }
+}
 
 
 
-// $('.carousel-item').carousel({
-//     pause: "false"
-// });
-
-// for (i = 0; i < mix.length; i++) {
-//     shuff[i].style.backgroundColor = "red";
+// function playClip(){
+//     if($('.carousel-item').eq(1).hasClass('shuffle')){
+//          $(this).next().get(0).play();
+//     }
 // }
+
+// window.setInterval(playClip,1500);
+
+
+
+
+
 
 

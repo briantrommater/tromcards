@@ -6,6 +6,10 @@ body {
 
 }
 
+.cards {
+    display: none;
+}
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%

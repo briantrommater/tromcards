@@ -1,17 +1,15 @@
 # cards
 
 to do:
+1) learn how to show and hide elements of the DOM like mike does.
 
-1) 4 start buttons
-2) 4 buttons at end of game
-3) then 13 buttons
-4) Win/lose screen/sound/background
-5) training images
-6) jQ
-7) es6
-8) see how triple game worked
-9) get sound effects on new card
 
+2)
+when person clicks on TRAIN it goes to a new carousel or bootstrap cards component(do bootstrapcards have controls?)
+
+carousel consists of 50+ training 'slides' user can scroll thru left or right using bootstrap controls
+
+a 'slide' consists of a picture and a footer with a sentence or comment about the slide.
 
 
 

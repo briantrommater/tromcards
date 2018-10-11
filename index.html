@@ -13,18 +13,34 @@
 </head>
 
 <body>
-  <button onclick="quarter()">QuarterDeck</button>
-
-  <button onclick="half()">HalfDeck</button>
+  <button class="start" onclick="quarter()">QuarterDeck</button>
+  <button class="start" onclick="half()">HalfDeck</button>
+  <button class="start" onclick="full()">FullDeck</button>
+  <button class="start" onclick="train()">Train</button>
   
-  <button onclick="full()">FullDeck</button>
-  
-      <div id="whole" class="carousel slide" data-ride="carousel" data-pause='false' data-wrap='false' data-interval="50">
+      <div id="whole" class="carousel slide" data-ride="carousel" data-pause='false' data-wrap='false' data-interval="100">
         <div class="carousel-inner">
 
         </div>
       </div>
-    
+     
+<button class="cards" id="AD" onclick='guessCard("AD")'>AD</button>
+<button class="cards" id="2D" onclick='guessCard("2D")'>2D</button>
+<button class="cards" id="3D" onclick='guessCard("3D")'>3D</button>
+<button class="cards" id="4D" onclick='guessCard("4D")'>4D</button>
+<button class="cards" id="5D" onclick='guessCard("5D")'>5D</button>
+<button class="cards" id="6D" onclick='guessCard("6D")'>6D</button>
+<button class="cards" id="7D" onclick='guessCard("7D")'>7D</button>
+<button class="cards" id="8D" onclick='guessCard("8D")'>8D</button>
+<button class="cards" id="9D" onclick='guessCard("9D")'>9D</button>
+<button class="cards" id="10D" onclick='guessCard("10D")'>10D</button>
+<button class="cards" id="JD" onclick='guessCard("JD")'>JD</button>
+<button class="cards" id="QD" onclick='guessCard("QD")'>QD</button>
+<button class="cards" id="KD" onclick='guessCard("KD")'>KD</button>
+
+<audio id="pacman">
+  <source src="pacman_death.wav" type="audio/wav">
+</audio>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
