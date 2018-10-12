@@ -100,6 +100,19 @@ img {
         }
     }
 
+.cards {
+    display: none;
+    /* float: right; */
+    width: 100px;
+    height: 120px;
+    border: 6px outset silver;
+    background: radial-gradient(circle, rgb(47, 150, 168), rgb(45, 70, 180));
+    margin: 0;
+    /* vertical-align: top; */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 90px;
+    text-align: center;
+}
 
 .carousel-inner img {
     width: 100%;
