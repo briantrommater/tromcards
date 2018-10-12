@@ -105,7 +105,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
     let num_cards = $('.carousel-item').length
     if ( (num_cards - 1) === e.to) {
         $('.carousel-inner').empty();
-        let fiftyTwoAppear = document.getElementsByClassName("cards");
+        let fiftyTwoAppear = document.getElementsByClassName("container");
             for (let stuff of fiftyTwoAppear) {
             stuff.style.display = "block";
             }
@@ -127,13 +127,6 @@ function guessCard(card) {
 
 
 
-// function playClip(){
-//     if($('.carousel-item').eq(1).hasClass('shuffle')){
-//          $(this).next().get(0).play();
-//     }
-// }
-
-// window.setInterval(playClip,1500);
 
 
 

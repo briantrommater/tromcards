@@ -7,17 +7,42 @@ body {
 }
 
 .cards {
-    display: none;
+  
     float: right;
-    width: 150px;
+    width: 70px;
     height: 120px;
-    border: 6px outset silver;
+    /* border: 6px outset silver;
     background: radial-gradient(circle, rgb(47, 150, 168), rgb(45, 70, 180));
     margin: 0;
-    /* vertical-align: top; */
+    vertical-align: top;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 90px;
-    text-align: center;
+    font-size: 70px;
+    text-align: center; */
+    margin: 6px;
+    /* position: relative; */
+    
+}
+
+.container {
+    display: none;
+}
+
+.start {
+    height: 360px;
+    width: 360px;
+    /* width: 96px;
+    height: 54px; */
+    border: 1px solid black;
+    border-radius: 33px;
+    background-color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 44, 0);
+    outline: none;
+    display: inline-block;
+    margin: 10px;
+   
 }
 
 @-webkit-keyframes Gradient {
@@ -44,10 +69,14 @@ body {
 	}
 }
 
-img {
+.shuffle {
     height: 753px;
     margin: 7px;
     right: 7px;
+ }
+
+ .pint {
+    height: 88px;
  }
 
 #whole {
@@ -61,7 +90,7 @@ img {
         margin: 0 auto;
     }
     
-    img {
+    .shuffle {
       
        width: 45px;
        margin: 7px;
