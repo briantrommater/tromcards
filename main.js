@@ -105,7 +105,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
     let num_cards = $('.carousel-item').length
     if ( (num_cards - 1) === e.to) {
         $('.carousel-inner').empty();
-        let fiftyTwoAppear = document.getElementsByClassName("container");
+        let fiftyTwoAppear = document.getElementsByClassName("containerA");
             for (let stuff of fiftyTwoAppear) {
             stuff.style.display = "block";
             }
