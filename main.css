@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(-75deg, rgb(62, 185, 62), white , rgb(16, 202, 235), white);
+    background: linear-gradient(-75deg, rgb(3, 245, 3), white , rgb(16, 202, 235), white);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
