@@ -14,78 +14,85 @@
 </head>
 
 <body>
-  <div class="start" onclick="quarter()">QuarterDeck</div>
-  <div class="start" onclick="half()">HalfDeck</div>
+  <div class="start" onclick="club()">Clubs</div>
+  <div class="start" onclick="diamond()">Diamonds</div>
+  <div class="start" onclick="heart()">Hearts</div>
+  <div class="start" onclick="spade()">Spades</div>
+  <div class="start" onclick="halfDeckR()">RedCards</div>
+  <div class="start" onclick="halfDeckB()">BlackCards</div>
+  <div class="start" onclick="number()">SingleDigits</div>
+  <div class="start" onclick="picture()">Broadways</div>
   <div class="start" onclick="full()">FullDeck</div>
-  <div class="start" onclick="train()">Train</div>
   
-      <div id="whole" class="carousel slide" data-ride="carousel" data-pause='false' data-wrap='false' data-interval="1000">
+      <div id="whole" class="carousel slide" data-ride="carousel" data-pause='false' data-wrap='false'>
         <div class="carousel-inner">
 
         </div>
       </div>
-
+   
   <div class="containerA">
-  <h1 class="endQ">Which card is missing?</h1>
-  <div class="cards" id="AD" onclick='guessCard("AD")'><img class="pint" src="images/AD.jpg"></div>
-  <div class="cards" id="2D" onclick='guessCard("2D")'><img class="pint" src="images/2D.jpg"></div>
-  <div class="cards" id="3D" onclick='guessCard("3D")'><img class="pint" src="images/3D.jpg"></div>
-  <div class="cards" id="4D" onclick='guessCard("4D")'><img class="pint" src="images/4D.jpg"></div>
-  <div class="cards" id="5D" onclick='guessCard("5D")'><img class="pint" src="images/5D.jpg"></div>
-  <div class="cards" id="6D" onclick='guessCard("6D")'><img class="pint" src="images/6D.jpg"></div>
-  <div class="cards" id="7D" onclick='guessCard("7D")'><img class="pint" src="images/7D.jpg"></div>
-  <div class="cards" id="8D" onclick='guessCard("8D")'><img class="pint" src="images/8D.jpg"></div>
-  <div class="cards" id="9D" onclick='guessCard("9D")'><img class="pint" src="images/9D.jpg"></div>
-  <div class="cards" id="10D" onclick='guessCard("10D")'><img class="pint" src="images/10D.jpg"></div>
-  <div class="cards" id="JD" onclick='guessCard("JD")'><img class="pint" src="images/JD.jpg"></div>
-  <div class="cards" id="QD" onclick='guessCard("QD")'><img class="pint" src="images/QD.jpg"></div>
-  <div class="cards" id="KD" onclick='guessCard("KD")'><img class="pint" src="images/KD.jpg"></div>
-<div class="block"></div>
-<div class="cards" id="AS" onclick='guessCard("AS")'><img class="pint" src="images/AS.jpg"></div>
-<div class="cards" id="2S" onclick='guessCard("2S")'><img class="pint" src="images/2S.jpg"></div>
-<div class="cards" id="3S" onclick='guessCard("3S")'><img class="pint" src="images/3S.jpg"></div>
-<div class="cards" id="4S" onclick='guessCard("4S")'><img class="pint" src="images/4S.jpg"></div>
-<div class="cards" id="5S" onclick='guessCard("5S")'><img class="pint" src="images/5S.jpg"></div>
-<div class="cards" id="6S" onclick='guessCard("6S")'><img class="pint" src="images/6S.jpg"></div>
-<div class="cards" id="7S" onclick='guessCard("7S")'><img class="pint" src="images/7S.jpg"></div>
-<div class="cards" id="8S" onclick='guessCard("8S")'><img class="pint" src="images/8S.jpg"></div>
-<div class="cards" id="9S" onclick='guessCard("9S")'><img class="pint" src="images/9S.jpg"></div>
-<div class="cards" id="10S" onclick='guessCard("10S")'><img class="pint" src="images/10S.jpg"></div>
-<div class="cards" id="JS" onclick='guessCard("JS")'><img class="pint" src="images/JS.jpg"></div>
-<div class="cards" id="QS" onclick='guessCard("QS")'><img class="pint" src="images/QS.jpg"></div>
-<div class="cards" id="KS" onclick='guessCard("KS")'><img class="pint" src="images/KS.jpg"></div>
-<div class="block"></div>
+    <h1 class="endQ">Which card is missing?</h1>
+    <div class="cards" id="AD" onclick='guessCard("AD")'><img class="pint" src="images/AD.jpg"></div>
+    <div class="cards" id="2D" onclick='guessCard("2D")'><img class="pint" src="images/2D.jpg"></div>
+    <div class="cards" id="3D" onclick='guessCard("3D")'><img class="pint" src="images/3D.jpg"></div>
+    <div class="cards" id="4D" onclick='guessCard("4D")'><img class="pint" src="images/4D.jpg"></div>
+    <div class="cards" id="5D" onclick='guessCard("5D")'><img class="pint" src="images/5D.jpg"></div>
+    <div class="cards" id="6D" onclick='guessCard("6D")'><img class="pint" src="images/6D.jpg"></div>
+    <div class="cards" id="7D" onclick='guessCard("7D")'><img class="pint" src="images/7D.jpg"></div>
+    <div class="cards" id="8D" onclick='guessCard("8D")'><img class="pint" src="images/8D.jpg"></div>
+    <div class="cards" id="9D" onclick='guessCard("9D")'><img class="pint" src="images/9D.jpg"></div>
+    <div class="cards" id="10D" onclick='guessCard("10D")'><img class="pint" src="images/10D.jpg"></div>
+    <div class="cards" id="JD" onclick='guessCard("JD")'><img class="pint" src="images/JD.jpg"></div>
+    <div class="cards" id="QD" onclick='guessCard("QD")'><img class="pint" src="images/QD.jpg"></div>
+    <div class="cards" id="KD" onclick='guessCard("KD")'><img class="pint" src="images/KD.jpg"></div>
+      <div class="block"></div>
+      
+    <div class="cards" id="AS" onclick='guessCard("AS")'><img class="pint" src="images/AS.jpg"></div>
+    <div class="cards" id="2S" onclick='guessCard("2S")'><img class="pint" src="images/2S.jpg"></div>
+    <div class="cards" id="3S" onclick='guessCard("3S")'><img class="pint" src="images/3S.jpg"></div>
+    <div class="cards" id="4S" onclick='guessCard("4S")'><img class="pint" src="images/4S.jpg"></div>
+    <div class="cards" id="5S" onclick='guessCard("5S")'><img class="pint" src="images/5S.jpg"></div>
+    <div class="cards" id="6S" onclick='guessCard("6S")'><img class="pint" src="images/6S.jpg"></div>
+    <div class="cards" id="7S" onclick='guessCard("7S")'><img class="pint" src="images/7S.jpg"></div>
+    <div class="cards" id="8S" onclick='guessCard("8S")'><img class="pint" src="images/8S.jpg"></div>
+    <div class="cards" id="9S" onclick='guessCard("9S")'><img class="pint" src="images/9S.jpg"></div>
+    <div class="cards" id="10S" onclick='guessCard("10S")'><img class="pint" src="images/10S.jpg"></div>
+    <div class="cards" id="JS" onclick='guessCard("JS")'><img class="pint" src="images/JS.jpg"></div>
+    <div class="cards" id="QS" onclick='guessCard("QS")'><img class="pint" src="images/QS.jpg"></div>
+    <div class="cards" id="KS" onclick='guessCard("KS")'><img class="pint" src="images/KS.jpg"></div>
+      <div class="block"></div>
 
-<div class="cards" id="AH" onclick='guessCard("AH")'><img class="pint" src="images/AH.jpg"></div>
-<div class="cards" id="2H" onclick='guessCard("2H")'><img class="pint" src="images/2H.jpg"></div>
-<div class="cards" id="3H" onclick='guessCard("3H")'><img class="pint" src="images/3H.jpg"></div>
-<div class="cards" id="4H" onclick='guessCard("4H")'><img class="pint" src="images/4H.jpg"></div>
-<div class="cards" id="5H" onclick='guessCard("5H")'><img class="pint" src="images/5H.jpg"></div>
-<div class="cards" id="6H" onclick='guessCard("6H")'><img class="pint" src="images/6H.jpg"></div>
-<div class="cards" id="7H" onclick='guessCard("7H")'><img class="pint" src="images/7H.jpg"></div>
-<div class="cards" id="8H" onclick='guessCard("8H")'><img class="pint" src="images/8H.jpg"></div>
-<div class="cards" id="9H" onclick='guessCard("9H")'><img class="pint" src="images/9H.jpg"></div>
-<div class="cards" id="10H" onclick='guessCard("10H")'><img class="pint" src="images/10H.jpg"></div>
-<div class="cards" id="JH" onclick='guessCard("JH")'><img class="pint" src="images/JH.jpg"></div>
-<div class="cards" id="QH" onclick='guessCard("QH")'><img class="pint" src="images/QH.jpg"></div>
-<div class="cards" id="KH" onclick='guessCard("KH")'><img class="pint" src="images/KH.jpg"></div>
-<div class="block"></div>
+    <div class="cards" id="AH" onclick='guessCard("AH")'><img class="pint" src="images/AH.jpg"></div>
+    <div class="cards" id="2H" onclick='guessCard("2H")'><img class="pint" src="images/2H.jpg"></div>
+    <div class="cards" id="3H" onclick='guessCard("3H")'><img class="pint" src="images/3H.jpg"></div>
+    <div class="cards" id="4H" onclick='guessCard("4H")'><img class="pint" src="images/4H.jpg"></div>
+    <div class="cards" id="5H" onclick='guessCard("5H")'><img class="pint" src="images/5H.jpg"></div>
+    <div class="cards" id="6H" onclick='guessCard("6H")'><img class="pint" src="images/6H.jpg"></div>
+    <div class="cards" id="7H" onclick='guessCard("7H")'><img class="pint" src="images/7H.jpg"></div>
+    <div class="cards" id="8H" onclick='guessCard("8H")'><img class="pint" src="images/8H.jpg"></div>
+    <div class="cards" id="9H" onclick='guessCard("9H")'><img class="pint" src="images/9H.jpg"></div>
+    <div class="cards" id="10H" onclick='guessCard("10H")'><img class="pint" src="images/10H.jpg"></div>
+    <div class="cards" id="JH" onclick='guessCard("JH")'><img class="pint" src="images/JH.jpg"></div>
+    <div class="cards" id="QH" onclick='guessCard("QH")'><img class="pint" src="images/QH.jpg"></div>
+    <div class="cards" id="KH" onclick='guessCard("KH")'><img class="pint" src="images/KH.jpg"></div>
+      <div class="block"></div>
 
-<div class="cards" id="AC" onclick='guessCard("AC")'><img class="pint" src="images/AC.jpg"></div>
-<div class="cards" id="2C" onclick='guessCard("2C")'><img class="pint" src="images/2C.jpg"></div>
-<div class="cards" id="3C" onclick='guessCard("3C")'><img class="pint" src="images/3C.jpg"></div>
-<div class="cards" id="4C" onclick='guessCard("4C")'><img class="pint" src="images/4C.jpg"></div>
-<div class="cards" id="5C" onclick='guessCard("5C")'><img class="pint" src="images/5C.jpg"></div>
-<div class="cards" id="6C" onclick='guessCard("6C")'><img class="pint" src="images/6C.jpg"></div>
-<div class="cards" id="7C" onclick='guessCard("7C")'><img class="pint" src="images/7C.jpg"></div>
-<div class="cards" id="8C" onclick='guessCard("8C")'><img class="pint" src="images/8C.jpg"></div>
-<div class="cards" id="9C" onclick='guessCard("9C")'><img class="pint" src="images/9C.jpg"></div>
-<div class="cards" id="10C" onclick='guessCard("10C")'><img class="pint" src="images/10C.jpg"></div>
-<div class="cards" id="JC" onclick='guessCard("JC")'><img class="pint" src="images/JC.jpg"></div>
-<div class="cards" id="QC" onclick='guessCard("QC")'><img class="pint" src="images/QC.jpg"></div>
-<div class="cards" id="KC" onclick='guessCard("KC")'><img class="pint" src="images/KC.jpg"></div>
-<div class="block"></div>
-</div>
+    <div class="cards" id="AC" onclick='guessCard("AC")'><img class="pint" src="images/AC.jpg"></div>
+    <div class="cards" id="2C" onclick='guessCard("2C")'><img class="pint" src="images/2C.jpg"></div>
+    <div class="cards" id="3C" onclick='guessCard("3C")'><img class="pint" src="images/3C.jpg"></div>
+    <div class="cards" id="4C" onclick='guessCard("4C")'><img class="pint" src="images/4C.jpg"></div>
+    <div class="cards" id="5C" onclick='guessCard("5C")'><img class="pint" src="images/5C.jpg"></div>
+    <div class="cards" id="6C" onclick='guessCard("6C")'><img class="pint" src="images/6C.jpg"></div>
+    <div class="cards" id="7C" onclick='guessCard("7C")'><img class="pint" src="images/7C.jpg"></div>
+    <div class="cards" id="8C" onclick='guessCard("8C")'><img class="pint" src="images/8C.jpg"></div>
+    <div class="cards" id="9C" onclick='guessCard("9C")'><img class="pint" src="images/9C.jpg"></div>
+    <div class="cards" id="10C" onclick='guessCard("10C")'><img class="pint" src="images/10C.jpg"></div>
+    <div class="cards" id="JC" onclick='guessCard("JC")'><img class="pint" src="images/JC.jpg"></div>
+    <div class="cards" id="QC" onclick='guessCard("QC")'><img class="pint" src="images/QC.jpg"></div>
+    <div class="cards" id="KC" onclick='guessCard("KC")'><img class="pint" src="images/KC.jpg"></div>
+      <div class="block"></div><br><br><br><br><br><br>
+        <button class="restart" onclick='restart()'>NewGame</button>
+  </div>
 
 <audio id="pacman">
     <source src="sounds/pacman_death.wav" type="audio/wav">

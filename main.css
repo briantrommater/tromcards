@@ -32,17 +32,17 @@ body {
 }
 
 .start {
-    height: 360px;
-    width: 360px;
-    width: 96px;
-    height: 54px;
+    height: 300px;
+    width: 300px;
     border: 1px solid black;
     border-radius: 33px;
-    background-color: lime;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    background-color: rgb(73, 245, 73);
+    font-family: 'Franklin Gothic Medium', Courier, monospace;
+    font-size: 48px;
     font-weight: bold;
-    color: rgb(0, 44, 0);
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(28, 55, 173);
     outline: none;
     display: inline-block;
     margin: 10px;
