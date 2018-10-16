@@ -76,6 +76,10 @@ body {
 	}
 }
 
+.d-block {
+    border-radius: 5%;
+}
+
 .shuffle {
     height: 753px;
     margin: 7px;
@@ -93,3 +97,39 @@ body {
     margin: 0 auto;
 }
 
+#clubs {
+    color: rgb(8, 66, 8);
+}
+#diamonds {
+    color: rgb(49, 149, 207);
+}
+#hearts {
+    color: red;
+}
+#spades {
+    color: black;
+}
+#redcards {
+    color: rgb(163, 27, 27);
+}
+#blackcards {
+    color: rgb(78, 67, 67);
+}
+#clickme {
+    color: blueviolet;
+}
+#singles {
+    color: orange;
+}
+#broadways {
+    color: rgb(225, 236, 68);
+}
+#fulldeck {
+    color: rgb(62, 62, 211);
+}
+#train {
+    color: white;
+}
+#hiclick {
+    color: rgb(19, 83, 25)
+}

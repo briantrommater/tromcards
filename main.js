@@ -31,9 +31,9 @@ function club() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 50
+        interval: 500
     })
-    let theseDisappear = document.getElementsByClassName("start");
+    let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
            thing.style.display = "none";
     }
@@ -55,7 +55,7 @@ function diamond() {
     $('.carousel').carousel({
         interval: 500
     })
-    let theseDisappear = document.getElementsByClassName("start");
+    let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
            thing.style.display = "none";
     }
@@ -77,7 +77,7 @@ function heart() {
     $('.carousel').carousel({
         interval: 500
     })
-    let theseDisappear = document.getElementsByClassName("start");
+    let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
            thing.style.display = "none";
     }
@@ -99,7 +99,7 @@ function spade() {
     $('.carousel').carousel({
         interval: 500
     })
-    let theseDisappear = document.getElementsByClassName("start");
+    let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
            thing.style.display = "none";
     }
@@ -119,9 +119,9 @@ function halfDeckR() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2500
     })
-    let theseDisappear = document.getElementsByClassName("start");
+    let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
            thing.style.display = "none";
     }
@@ -141,9 +141,9 @@ function halfDeckB() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2500
     })
-    let theseDisappear = document.getElementsByClassName("start");
+    let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
            thing.style.display = "none";
     }
@@ -163,9 +163,9 @@ function number() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2500
     })
-    let theseDisappear = document.getElementsByClassName("start");
+    let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
            thing.style.display = "none";
     }
@@ -185,9 +185,9 @@ function picture() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2500
     })
-    let theseDisappear = document.getElementsByClassName("start");
+    let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
            thing.style.display = "none";
     }
@@ -208,9 +208,9 @@ function full() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 4500
+        interval: 500
     })
-    let theseDisappear = document.getElementsByClassName("start");
+    let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
             thing.style.display = "none";
     }
@@ -225,19 +225,6 @@ function full() {
         }
     })
 }
-
-// function train() {
-//     $('#train').carousel()
-//     console.log('hi')
-//     let theseDisappear = document.getElementsByClassName("start");
-//     for (let thing of theseDisappear) {
-//         thing.style.display = "none";
-//     }
-//     $('.carousel-inner').empty();
-//     $('#train').carousel()
-//     console.log('hey')
-// }
-// removeCard()
 
 function click1() {
     let date = new Date();
