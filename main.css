@@ -125,8 +125,7 @@ body {
 #hiclick {
     color: rgb(19, 83, 25)
 }
-
-@media all and (max-width: 480px) {
+@media all and (max-width: 500px) and (min-width: 401px) {
     #whole {
         width: 80%;
         margin: 0 auto;
@@ -163,5 +162,45 @@ body {
     }
     .begin {
         margin-left: 7.2%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    #whole {
+        width: 78%;
+        margin: 0 auto;
+    }
+
+    .cards {
+        width: 13.3%;
+        height: 64px;
+        display: inline-block;
+        font-size: 0;
+        margin-bottom: 7px;
+        position: relative;
+         
+    }
+    .start {
+        height: 75px;
+        width: 130px;
+        border: 1px solid black;
+        border-radius: 33px;
+        background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white);
+        background-size: 200% 200%;
+        -webkit-animation: Gradient 3s ease infinite;
+        animation: Gradient 3s ease infinite;
+        font-family: 'Franklin Gothic Medium', Courier, monospace;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+        color: rgb(28, 55, 173);
+        outline: none;
+        display: inline-block;
+        margin: 9px;
+       
+    }
+    .begin {
+        margin-left: 8.2%;
     }
 }
