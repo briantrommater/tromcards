@@ -226,28 +226,6 @@ function full() {
     })
 }
 
-function click1() {
-    let date = new Date();
-    let sec = date.getSeconds();
-    if (sec % 3 === 0) {
-        document.querySelector("#mariodie").play();
-    }
-    else if (sec % 5 === 0) {
-        document.querySelector("#fart").play();
-    }
-    else if (sec % 7 === 0) {
-        document.querySelector("#fart2").play();
-    }
-    else {
-        document.querySelector("#pacman").play();
-    }
-}
-
-function click2() {
-    document.querySelector("#mariowin").play();
-}
-
-
 function removeCard() {
     //remove a random card
     let randomCardIdx = Math.floor(Math.random() * clonedCards.length);
@@ -304,15 +282,13 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 
 
 function guessCard(card) {
-    console.log(card);
     let date = new Date();
     let sec = date.getSeconds();
-    console.log(sec);
     if (missingCard == card) {
         document.querySelector("#mariowin").play();
     }
     else if (sec % 3 === 0) {
-        document.querySelector("#donkeykong").play();
+        document.querySelector("#pacman").play();
     }
     else if (sec % 5 === 0) {
         document.querySelector("#mario").play();
@@ -327,16 +303,43 @@ function guessCard(card) {
         document.querySelector("#fart3").play();
     }
     else {
-        document.querySelector("#pacman").play();
+        document.querySelector("#donkeykong").play();
     }
     
+}
+
+function click1() {
+    let date = new Date();
+    let sec = date.getSeconds();
+    if (sec % 3 === 0) {
+        document.querySelector("#pacman").play();
+    }
+    else if (sec % 5 === 0) {
+        document.querySelector("#mario").play();
+    }
+    else if (sec % 7 === 0) {
+        document.querySelector("#fart1").play();
+    }
+    else if (sec % 11 === 0) {
+        document.querySelector("#fart2").play();
+    }
+    else if (sec % 13 === 0) {
+        document.querySelector("#fart3").play();
+    }
+    else {
+        document.querySelector("#donkeykong").play();
+    }
+}
+
+function click2() {
+    document.querySelector("#mariowin").play();
 }
 
 function restart() {
     location.reload(true);
 }
 
-// screen.lockOrientation("portrait-primary");
+// screen.lockOrientation("portrait-primary")//
 
 
 
