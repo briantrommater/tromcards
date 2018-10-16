@@ -284,6 +284,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 function guessCard(card) {
     let date = new Date();
     let sec = date.getSeconds();
+    console.log(sec);
     if (missingCard == card) {
         document.querySelector("#mariowin").play();
     }
@@ -293,13 +294,13 @@ function guessCard(card) {
     else if (sec % 5 === 0) {
         document.querySelector("#mario").play();
     }
-    else if (sec % 7 === 0) {
+    else if (sec % 11 === 0) {
         document.querySelector("#fart1").play();
     }
-    else if (sec % 11 === 0) {
+    else if (sec % 13 === 0) {
         document.querySelector("#fart2").play();
     }
-    else if (sec % 13 === 0) {
+    else if (sec % 17 === 0) {
         document.querySelector("#fart3").play();
     }
     else {
@@ -317,13 +318,13 @@ function click1() {
     else if (sec % 5 === 0) {
         document.querySelector("#mario").play();
     }
-    else if (sec % 7 === 0) {
+    else if (sec % 11 === 0) {
         document.querySelector("#fart1").play();
     }
-    else if (sec % 11 === 0) {
+    else if (sec % 13 === 0) {
         document.querySelector("#fart2").play();
     }
-    else if (sec % 13 === 0) {
+    else if (sec % 17 === 0) {
         document.querySelector("#fart3").play();
     }
     else {
