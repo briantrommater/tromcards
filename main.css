@@ -125,12 +125,17 @@ body {
 #hiclick {
     color: rgb(19, 83, 25)
 }
-@media all and (max-width: 500px) and (min-width: 401px) {
+@media all and (max-width: 422px) and (min-width: 377px) {
     #whole {
         width: 80%;
         margin: 0 auto;
     }
-
+    .carousel-item {
+        height: 714px;
+    } 
+    .carousel-item img {
+        height: 714px;
+    } 
     .cards {
         width: 13.41%;
         height: 78px;
@@ -165,12 +170,17 @@ body {
     }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 376px) and (min-width: 325px) {
     #whole {
-        width: 78%;
+        width: 88%;
         margin: 0 auto;
     }
-
+    .carousel-item {
+        height: 651px;
+    } 
+    .carousel-item img {
+        height: 651px;
+    } 
     .cards {
         width: 13.3%;
         height: 64px;
@@ -199,6 +209,50 @@ body {
         display: inline-block;
         margin: 9px;
        
+    }
+    .begin {
+        margin-left: 8.2%;
+    }
+}
+
+@media all and (max-width: 324px) {
+    #whole {
+        width: 81%;
+        margin: 0 auto;
+    }
+    .carousel-item {
+        height: 553px;
+    } 
+    .carousel-item img {
+        height: 553px;
+    } 
+    .cards {
+        width: 12.9%;
+        height: 51px;
+        display: inline-block;
+        font-size: 0;
+        margin-bottom: 7px;
+        position: relative;
+         
+    }
+    .start {
+        height: 65px;
+        width: 110px;
+        border: 1px solid black;
+        border-radius: 33px;
+        background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white);
+        background-size: 200% 200%;
+        -webkit-animation: Gradient 3s ease infinite;
+        animation: Gradient 3s ease infinite;
+        font-family: 'Franklin Gothic Medium', Courier, monospace;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        color: rgb(28, 55, 173);
+        outline: none;
+        display: inline-block;
+        margin: 6.5px;   
     }
     .begin {
         margin-left: 8.2%;
