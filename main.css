@@ -7,20 +7,11 @@ body {
 }
 
 .cards {
-    
     width: 7.42%;
     height: 120px;
     display: inline-block;
     font-size: 0;
     margin-bottom: 7px;
-    /* border: 6px outset silver;
-    background: radial-gradient(circle, rgb(47, 150, 168), rgb(45, 70, 180));
-    margin: 0;
-    vertical-align: top;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 70px;
-    text-align: center; 
-    margin: 6px; */
     position: relative;
      
 }
@@ -77,21 +68,22 @@ body {
 }
 
 .d-block {
-    border-radius: 5%;
+    border-radius: 6%;
 }
 
 .shuffle {
     height: 753px;
     margin: 7px;
     right: 7px;
- }
+}
 
- .pint {
+.pint {
     height: 100%;
-    
+}
 
- }
-
+#begin {
+    margin-left: 5%;
+}
 #whole {
     width: 42%;
     margin: 0 auto;
@@ -132,4 +124,25 @@ body {
 }
 #hiclick {
     color: rgb(19, 83, 25)
+}
+
+@media all and (max-width: 480px) {
+    #whole {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cards {
+        width: 13.41%;
+        height: 78px;
+        display: inline-block;
+        font-size: 0;
+        margin-bottom: 7px;
+        position: relative;
+         
+    }
+
+    #begin {
+        margin-left: 11.4%;
+    }
 }

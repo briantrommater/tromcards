@@ -208,7 +208,7 @@ function full() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 500
+        interval: 4500
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -307,18 +307,24 @@ function guessCard(card) {
     console.log(card);
     let date = new Date();
     let sec = date.getSeconds();
-
+    console.log(sec);
     if (missingCard == card) {
         document.querySelector("#mariowin").play();
     }
     else if (sec % 3 === 0) {
-        document.querySelector("#mariodie").play();
+        document.querySelector("#donkeykong").play();
     }
     else if (sec % 5 === 0) {
-        document.querySelector("#fart").play();
+        document.querySelector("#mario").play();
     }
     else if (sec % 7 === 0) {
+        document.querySelector("#fart1").play();
+    }
+    else if (sec % 11 === 0) {
         document.querySelector("#fart2").play();
+    }
+    else if (sec % 13 === 0) {
+        document.querySelector("#fart3").play();
     }
     else {
         document.querySelector("#pacman").play();
