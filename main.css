@@ -32,11 +32,14 @@ body {
 }
 
 .start {
-    height: 300px;
+    height: 220px;
     width: 300px;
     border: 1px solid black;
     border-radius: 33px;
-    background-color: rgb(73, 245, 73);
+    background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white);
+    background-size: 200% 200%;
+    -webkit-animation: Gradient 3s ease infinite;
+    animation: Gradient 3s ease infinite;
     font-family: 'Franklin Gothic Medium', Courier, monospace;
     font-size: 48px;
     font-weight: bold;

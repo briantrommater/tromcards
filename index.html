@@ -14,16 +14,21 @@
 </head>
 
 <body>
-  <div class="start" onclick="club()">Clubs</div>
-  <div class="start" onclick="diamond()">Diamonds</div>
-  <div class="start" onclick="heart()">Hearts</div>
-  <div class="start" onclick="spade()">Spades</div>
-  <div class="start" onclick="halfDeckR()">RedCards</div>
-  <div class="start" onclick="halfDeckB()">BlackCards</div>
-  <div class="start" onclick="number()">SingleDigits</div>
-  <div class="start" onclick="picture()">Broadways</div>
-  <div class="start" onclick="full()">FullDeck</div>
-  
+  <div id="begin">
+    <h1 class="hello">Welcome to trom_cards!</h1>
+    <div class="start" onclick="club()">Clubs</div>
+    <div class="start" onclick="diamond()">Diamonds</div>
+    <div class="start" onclick="heart()">Hearts</div>
+    <div class="start" onclick="spade()">Spades</div>
+    <div class="start" onclick="click1()">CLICK ME!</div>
+    <div class="start" onclick="halfDeckR()">RedCards</div>
+    <div class="start" onclick="halfDeckB()">BlackCards</div>
+    <div class="start" onclick="number()">Singles</div>
+    <div class="start" onclick="picture()">Broadways</div>
+    <div class="start" onclick="full()">FullDeck</div>
+    <div class="start" onclick="train()">Train</div>
+    <div class="start" onclick="click2()">Hi, Please Click Here</div>
+  </div>  
       <div id="whole" class="carousel slide" data-ride="carousel" data-pause='false' data-wrap='false'>
         <div class="carousel-inner">
 
@@ -97,8 +102,17 @@
 <audio id="pacman">
     <source src="sounds/pacman_death.wav" type="audio/wav">
   </audio>
-  <audio id="mario">
+<audio id="mariodie">
+    <source src="sounds/smb_mariodie.wav" type="audio/wav">
+  </audio>
+  <audio id="mariowin">
     <source src="sounds/smb_powerup.wav" type="audio/wav">
+  </audio>
+  <audio id="fart">
+    <source src="sounds/fart.wav" type="audio/wav">
+  </audio>
+  <audio id="fart2">
+    <source src="sounds/fart2.wav" type="audio/wav">
   </audio>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

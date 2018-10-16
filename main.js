@@ -26,14 +26,12 @@ let clonedCards = [];
 
 let missingCard;
 
-
-
 function club() {
     clonedCards = [...clubs];
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 400
+        interval: 50
     })
     let theseDisappear = document.getElementsByClassName("start");
         for (let thing of theseDisappear) {
@@ -55,7 +53,7 @@ function diamond() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 400
+        interval: 500
     })
     let theseDisappear = document.getElementsByClassName("start");
         for (let thing of theseDisappear) {
@@ -77,7 +75,7 @@ function heart() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 400
+        interval: 500
     })
     let theseDisappear = document.getElementsByClassName("start");
         for (let thing of theseDisappear) {
@@ -99,7 +97,7 @@ function spade() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 400
+        interval: 500
     })
     let theseDisappear = document.getElementsByClassName("start");
         for (let thing of theseDisappear) {
@@ -121,7 +119,7 @@ function halfDeckR() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1200
+        interval: 1500
     })
     let theseDisappear = document.getElementsByClassName("start");
         for (let thing of theseDisappear) {
@@ -143,7 +141,7 @@ function halfDeckB() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1200
+        interval: 1500
     })
     let theseDisappear = document.getElementsByClassName("start");
         for (let thing of theseDisappear) {
@@ -165,7 +163,7 @@ function number() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1200
+        interval: 1500
     })
     let theseDisappear = document.getElementsByClassName("start");
         for (let thing of theseDisappear) {
@@ -187,7 +185,7 @@ function picture() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1200
+        interval: 1500
     })
     let theseDisappear = document.getElementsByClassName("start");
         for (let thing of theseDisappear) {
@@ -210,7 +208,7 @@ function full() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 3600
+        interval: 4500
     })
     let theseDisappear = document.getElementsByClassName("start");
         for (let thing of theseDisappear) {
@@ -240,6 +238,27 @@ function full() {
 //     console.log('hey')
 // }
 // removeCard()
+
+function click1() {
+    let date = new Date();
+    let sec = date.getSeconds();
+    if (sec % 3 === 0) {
+        document.querySelector("#mariodie").play();
+    }
+    else if (sec % 5 === 0) {
+        document.querySelector("#fart").play();
+    }
+    else if (sec % 7 === 0) {
+        document.querySelector("#fart2").play();
+    }
+    else {
+        document.querySelector("#pacman").play();
+    }
+}
+
+function click2() {
+    document.querySelector("#mariowin").play();
+}
 
 
 function removeCard() {
@@ -299,13 +318,25 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 
 function guessCard(card) {
     console.log(card);
+    let date = new Date();
+    let sec = date.getSeconds();
+
     if (missingCard == card) {
-        document.querySelector("#mario").play();
+        document.querySelector("#mariowin").play();
+    }
+    else if (sec % 3 === 0) {
+        document.querySelector("#mariodie").play();
+    }
+    else if (sec % 5 === 0) {
+        document.querySelector("#fart").play();
+    }
+    else if (sec % 7 === 0) {
+        document.querySelector("#fart2").play();
     }
     else {
-        console.log('lose')
         document.querySelector("#pacman").play();
     }
+    
 }
 
 function restart() {
