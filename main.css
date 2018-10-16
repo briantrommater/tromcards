@@ -137,14 +137,14 @@ body {
         font-size: 24px;
     }
     .carousel-item {
-        height: 685px;
+        height: 651px;
     } 
     .carousel-item img {
-        height: 685px;
+        height: 651px;
     } 
     .cards {
         width: 13.41%;
-        height: 75px;
+        height: 72px;
         display: inline-block;
         font-size: 0;
         margin-bottom: 7px;
@@ -152,7 +152,7 @@ body {
          
     }
     .start {
-        height: 85px;
+        height: 82px;
         width: 160px;
         border: 1px solid black;
         border-radius: 33px;
@@ -187,14 +187,14 @@ body {
         font-size: 23px;
     }
     .carousel-item {
-        height: 625px;
+        height: 593px;
     } 
     .carousel-item img {
-        height: 625px;
+        height: 593px;
     } 
     .cards {
         width: 13.3%;
-        height: 61px;
+        height: 59px;
         display: inline-block;
         font-size: 0;
         margin-bottom: 7px;
@@ -202,7 +202,7 @@ body {
          
     }
     .start {
-        height: 75px;
+        height: 72px;
         width: 130px;
         border: 1px solid black;
         border-radius: 33px;
@@ -238,14 +238,14 @@ body {
         font-size: 22px;
     }
     .carousel-item {
-        height: 531px;
+        height: 505px;
     } 
     .carousel-item img {
-        height: 531px;
+        height: 505px;
     } 
     .cards {
         width: 12.9%;
-        height: 49px;
+        height: 47px;
         display: inline-block;
         font-size: 0;
         margin-bottom: 7px;
@@ -253,7 +253,7 @@ body {
          
     }
     .start {
-        height: 65px;
+        height: 63px;
         width: 110px;
         border: 1px solid black;
         border-radius: 33px;
