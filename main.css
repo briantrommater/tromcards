@@ -81,7 +81,7 @@ body {
     height: 100%;
 }
 
-#begin {
+.begin {
     margin-left: 5%;
 }
 #whole {
@@ -141,8 +141,27 @@ body {
         position: relative;
          
     }
-
-    #begin {
-        margin-left: 11.4%;
+    .start {
+        height: 85px;
+        width: 160px;
+        border: 1px solid black;
+        border-radius: 33px;
+        background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white);
+        background-size: 200% 200%;
+        -webkit-animation: Gradient 3s ease infinite;
+        animation: Gradient 3s ease infinite;
+        font-family: 'Franklin Gothic Medium', Courier, monospace;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+        color: rgb(28, 55, 173);
+        outline: none;
+        display: inline-block;
+        margin: 9px;
+       
+    }
+    .begin {
+        margin-left: 7.2%;
     }
 }

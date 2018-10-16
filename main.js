@@ -336,6 +336,8 @@ function restart() {
     location.reload(true);
 }
 
+// screen.lockOrientation("portrait-primary");
+
 
 
 
