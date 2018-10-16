@@ -130,6 +130,12 @@ body {
         width: 80%;
         margin: 0 auto;
     }
+    #hello {
+        font-size: 18px;
+    }
+    .endQ {
+        font-size: 18px;
+    }
     .carousel-item {
         height: 714px;
     } 
@@ -163,7 +169,6 @@ body {
         outline: none;
         display: inline-block;
         margin: 9px;
-       
     }
     .begin {
         margin-left: 7.2%;
@@ -174,6 +179,12 @@ body {
     #whole {
         width: 88%;
         margin: 0 auto;
+    }
+    #hello {
+        font-size: 18px;
+    }
+    .endQ {
+        font-size: 18px;
     }
     .carousel-item {
         height: 651px;
@@ -219,6 +230,12 @@ body {
     #whole {
         width: 81%;
         margin: 0 auto;
+    }
+    #hello {
+        font-size: 18px;
+    }
+    .endQ {
+        font-size: 18px;
     }
     .carousel-item {
         height: 553px;
