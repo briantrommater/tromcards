@@ -1,4 +1,6 @@
+
 //these are arrays holding the 9 games
+//all the cool kids are using ES6
 let deckOfCards = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', '4S', '4D',
 '5C', '5H', '5S', '5D', '6C', '6H', '6S', '6D','7C', '7H', '7S', '7D', '8C', '8H', '8S', '8D',
 '9C', '9H', '9S', '9D', '10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH',
@@ -21,7 +23,7 @@ let broadways = ['10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH',
 
 //declare some global variables
 let clonedCards = [];
-
+//see above
 let missingCard;
 
 //let's create each game, keeping it super dry
@@ -48,6 +50,7 @@ function club() {
         }
     })
 }
+
 function diamond() {
     clonedCards = [...diamonds];
     removeCard()
@@ -70,6 +73,7 @@ function diamond() {
         }
     })
 }
+
 function heart() {
     clonedCards = [...hearts];
     removeCard()
@@ -92,6 +96,8 @@ function heart() {
         }
     })
 }
+
+//super dry.  have not repeated myself even once..
 function spade() {
     clonedCards = [...spades];
     removeCard()
@@ -114,6 +120,7 @@ function spade() {
         }
     })
 }
+
 function halfDeckR() {
     clonedCards = [...halfDeckRed];
     removeCard()
@@ -136,6 +143,7 @@ function halfDeckR() {
         }
     })
 }
+
 function halfDeckB() {
     clonedCards = [...halfDeckBlack];
     removeCard()
@@ -158,6 +166,9 @@ function halfDeckB() {
         }
     })
 }
+
+//by the way... 3 dots is an ES6 'spread' which is nasty
+//it's not like i'm saying 'to be continued...'
 function number() {
     clonedCards = [...singleDigits];
     removeCard()
@@ -180,6 +191,7 @@ function number() {
         }
     })
 }
+
 function picture() {
     clonedCards = [...broadways];
     removeCard()
@@ -225,12 +237,12 @@ function full() {
         }
     })
 }
-
+//hey what's up?
 function removeCard() {
     //remove a random card
     let randomCardIdx = Math.floor(Math.random() * clonedCards.length);
     missingCard = clonedCards.splice(randomCardIdx, 1);
-    //store card 
+    //gotta console log to test game
     console.log(missingCard.join());
     // shuffle the cards
     let shuffled = shuffle(clonedCards);
@@ -249,21 +261,20 @@ function shuffle(arr) {
     .sort((a, b) => a[0] - b[0])
     .map(i => i[1])
 }
-
+//must have active class else carousel wont start
 function createCard(img_src) {
     let activeClass = '';
 
     if ($('.carousel-item').length === 0) {// are we creating the first card?
         activeClass = 'active';
     }
-//lets not write 52 carousels that would be ridiculous
+//lets not write 52 carousels.. that would be ridiculous
     let card = `<div class="carousel-item ${activeClass}">
         <img class="d-block w-100 shuffle" src="images/${img_src}.jpg" alt=" slide">
     </div>`
 
     $('.carousel-inner').append(card);
 }
-
 //if the carousel has finished, let's go to end screen
 $('.carousel').on('slid.bs.carousel', function (e) {
     let num_cards = $('.carousel-item').length
@@ -275,9 +286,9 @@ $('.carousel').on('slid.bs.carousel', function (e) {
             }
     }
 })
-
-
-//get an integer 0-60, set farts to 8.5% to trick user
+//get an integer 0-60, set farts to 8.2%
+//use modulus to confuse user on why a random fart?
+//that old gag...
 function guessCard(card) {
     let date = new Date();
     let sec = date.getSeconds();
@@ -316,7 +327,7 @@ function click1() {
         document.querySelector("#donkeykong").play();
     }
 }
-//teach what a winning sound is
+//teach user what a winning sound is
 function hiclick() {
     document.querySelector("#mariowin").play();
 }
