@@ -1,3 +1,3 @@
 Welcome to TromCards!
 
-https://briantrommater.github.io/cards/
+https://briantrommater.github.io/tromcards/
