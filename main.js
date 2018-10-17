@@ -167,8 +167,8 @@ function halfDeckB() {
     })
 }
 
-//by the way... 3 dots is an ES6 'spread' which is nasty
-//it's not like i'm saying 'to be continued...'
+//by the way... 3 dots is a 'spread' in es6
+//it's not like i'm saying 'to be continued...
 function number() {
     clonedCards = [...singleDigits];
     removeCard()
@@ -237,8 +237,8 @@ function full() {
         }
     })
 }
-//hey what's up?  splice will return the spliced and modify resulting arr
-//that math floor stuff is Idx starts @ 0
+//splice will return the spliced and modify resulting arr
+//mathfloor & random to generate missing card
 function removeCard() {
     //remove a random card
     let randomCardIdx = Math.floor(Math.random() * clonedCards.length);
