@@ -300,7 +300,7 @@ function guessCard(card) {
     
 }
 
-function click1() {
+function click() {
     let date = new Date();
     let sec = date.getSeconds();
     if (sec % 3 === 0) {
@@ -323,7 +323,7 @@ function click1() {
     }
 }
 
-function click2() {
+function hiclick() {
     document.querySelector("#mariowin").play();
 }
 
