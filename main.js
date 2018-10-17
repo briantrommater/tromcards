@@ -1,4 +1,4 @@
-
+//these are arrays holding the 9 games
 let deckOfCards = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', '4S', '4D',
 '5C', '5H', '5S', '5D', '6C', '6H', '6S', '6D','7C', '7H', '7S', '7D', '8C', '8H', '8S', '8D',
 '9C', '9H', '9S', '9D', '10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH',
@@ -19,10 +19,13 @@ let singleDigits = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', 
 let broadways = ['10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH', 'QS', 'QD',
 'KC', 'KH', 'KS', 'KD', 'AC', 'AH', 'AS', 'AD'];
 
+//declare some global variables
 let clonedCards = [];
 
 let missingCard;
 
+//let's create each game, keeping it super dry
+//well, i had a deadline so here ya go..
 function club() {
     clonedCards = [...clubs];
     removeCard()
@@ -253,7 +256,7 @@ function createCard(img_src) {
     if ($('.carousel-item').length === 0) {// are we creating the first card?
         activeClass = 'active';
     }
-
+//lets not write 52 carousels that would be ridiculous
     let card = `<div class="carousel-item ${activeClass}">
         <img class="d-block w-100 shuffle" src="images/${img_src}.jpg" alt=" slide">
     </div>`
@@ -261,7 +264,7 @@ function createCard(img_src) {
     $('.carousel-inner').append(card);
 }
 
-
+//if the carousel has finished, let's go to end screen
 $('.carousel').on('slid.bs.carousel', function (e) {
     let num_cards = $('.carousel-item').length
     if ( (num_cards - 1) === e.to) {
@@ -274,7 +277,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 })
 
 
-
+//get an integer 0-60, set farts to 8.5% to trick user
 function guessCard(card) {
     let date = new Date();
     let sec = date.getSeconds();
@@ -299,7 +302,7 @@ function guessCard(card) {
     }
     
 }
-
+//teach user what a losing sound is
 function click() {
     let date = new Date();
     let sec = date.getSeconds();
@@ -313,16 +316,16 @@ function click() {
         document.querySelector("#donkeykong").play();
     }
 }
-
+//teach what a winning sound is
 function hiclick() {
     document.querySelector("#mariowin").play();
 }
-
+//new game
 function restart() {
     location.reload(true);
 }
 
-// screen.lockOrientation("portrait-primary")//
+
 
 
 
