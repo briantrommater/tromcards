@@ -303,7 +303,7 @@ function guessCard(card) {
     
 }
 //teach user what a losing sound is
-function click() {
+function click1() {
     let date = new Date();
     let sec = date.getSeconds();
     if (sec % 3 === 0) {
