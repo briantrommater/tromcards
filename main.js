@@ -309,15 +309,6 @@ function click() {
     else if (sec % 5 === 0) {
         document.querySelector("#mario").play();
     }
-    else if (sec % 11 === 0) {
-        document.querySelector("#fart1").play();
-    }
-    else if (sec % 13 === 0) {
-        document.querySelector("#fart2").play();
-    }
-    else if (sec % 17 === 0) {
-        document.querySelector("#fart3").play();
-    }
     else {
         document.querySelector("#donkeykong").play();
     }

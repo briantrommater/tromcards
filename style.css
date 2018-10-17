@@ -114,7 +114,7 @@ body {
     color: orange;
 }
 #broadways {
-    color: rgb(225, 236, 68);
+    color: rgb(10, 94, 14);
 }
 #fulldeck {
     color: rgb(62, 62, 211);
@@ -123,7 +123,7 @@ body {
     color: white;
 }
 #hiclick {
-    color: rgb(19, 83, 25)
+    color: rgb(231, 235, 45)
 }
 @media all and (max-width: 422px) and (min-width: 377px) {
     #whole {
