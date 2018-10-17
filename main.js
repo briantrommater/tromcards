@@ -23,7 +23,7 @@ let broadways = ['10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH',
 
 //declare some global variables
 let clonedCards = [];
-//see above
+
 let missingCard;
 
 //let's create each game, keeping it super dry
@@ -237,7 +237,8 @@ function full() {
         }
     })
 }
-//hey what's up?
+//hey what's up?  splice will return the spliced and modify resulting arr
+//that math floor stuff is Idx starts @ 0
 function removeCard() {
     //remove a random card
     let randomCardIdx = Math.floor(Math.random() * clonedCards.length);
@@ -246,10 +247,8 @@ function removeCard() {
     console.log(missingCard.join());
     // shuffle the cards
     let shuffled = shuffle(clonedCards);
-
     // empty the carousel
     $('.carousel-inner').empty();
-
     //put new cards back in carousel
     for (let card of shuffled) {
         createCard(card)
