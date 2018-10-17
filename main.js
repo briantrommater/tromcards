@@ -1,6 +1,3 @@
-$(document).ready(function() {
-
-});
 
 let deckOfCards = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', '4S', '4D',
 '5C', '5H', '5S', '5D', '6C', '6H', '6S', '6D','7C', '7H', '7S', '7D', '8C', '8H', '8S', '8D',
@@ -242,11 +239,8 @@ function removeCard() {
     for (let card of shuffled) {
         createCard(card)
     }
-
-    // reinitialize carousel
-    // $('.carousel').carousel()
 }
-
+//nasty shuffle :)
 function shuffle(arr) {
     return arr.map(i => [Math.random(), i])
     .sort((a, b) => a[0] - b[0])
@@ -289,22 +283,19 @@ function guessCard(card) {
         document.querySelector("#mariowin").play();
     }
     else if (sec % 3 === 0) {
-        document.querySelector("#pacman").play();
+        document.querySelector("#donkeykong").play();
     }
     else if (sec % 5 === 0) {
         document.querySelector("#mario").play();
     }
-    else if (sec % 11 === 0) {
+    else if (sec % 13 === 0) {
         document.querySelector("#fart1").play();
     }
-    else if (sec % 13 === 0) {
+    else if (sec % 17 === 0) {
         document.querySelector("#fart2").play();
     }
-    else if (sec % 17 === 0) {
-        document.querySelector("#fart3").play();
-    }
     else {
-        document.querySelector("#donkeykong").play();
+        document.querySelector("#pacman").play();
     }
     
 }
