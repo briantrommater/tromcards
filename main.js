@@ -339,7 +339,6 @@ function restart() {
 function hello() {
     let date = new Date();
     let hour = date.getHours();
-    console.log(hour);
     if (hour === 14) {
         document.getElementById("hello").innerHTML = "Play TromCards before 3pm or else...";
     }
