@@ -26,19 +26,21 @@ let clonedCards = [];
 
 let missingCard;
 
-//let's create each game, keeping it super dry
-//well, i had a deadline so here ya go..
+//let's create each game
+//clone deck using spread
 function club() {
     clonedCards = [...clubs];
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 444
+        interval: 444  //set interval in milliseconds 
     })
+    //make game buttons disappear and go to carousel
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
            thing.style.display = "none";
     }
+    //once the carousel ends go to the end screen
     $('.carousel').on('slid.bs.carousel', function (e) {
         let num_cards = $('.carousel-item').length
         if ( (num_cards - 1) === e.to) {
@@ -79,7 +81,7 @@ function heart() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 444
+        interval: 444 
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -97,7 +99,6 @@ function heart() {
     })
 }
 
-//dry as the sahara..  have not repeated myself even once..
 function spade() {
     clonedCards = [...spades];
     removeCard()
@@ -121,6 +122,7 @@ function spade() {
     })
 }
 
+//dry as the sahara..  have not repeated myself even once..
 function halfDeckR() {
     clonedCards = [...halfDeckRed];
     removeCard()
@@ -244,8 +246,6 @@ function removeCard() {
     //remove a random card
     let randomCardIdx = Math.floor(Math.random() * clonedCards.length);
     missingCard = clonedCards.splice(randomCardIdx, 1);
-    //gotta console log to test game
-    console.log(missingCard.join());
     // shuffle the cards
     let shuffled = shuffle(clonedCards);
     // empty the carousel
@@ -335,7 +335,7 @@ function hiclick() {
 function restart() {
     location.reload(true);
 }
-
+//customized greetings based on hour of day
 function hello() {
     let date = new Date();
     let hour = date.getHours();
@@ -412,10 +412,10 @@ function hello() {
     else {
         document.getElementById("hello").innerHTML = "Welcome to TromCards!";
     }
-
 }
-
 hello();
+
+
 
 
 
