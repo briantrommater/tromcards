@@ -380,7 +380,7 @@ function hello() {
         document.getElementById("hello").innerHTML = "Don't you have to work tomorrow? Oh well,, quick game of TromCards?";
     }
     else if (hour === 3) {
-        document.getElementById("hello").innerHTML = "Hmmm... TromCards this late??  I would NOT tell you doctor about this";
+        document.getElementById("hello").innerHTML = "Hmmm.. TromCards this late??  I would NOT tell your doctor about this";
     }
     else if (hour === 4) {
         document.getElementById("hello").innerHTML = "ZZZZZZZ¸¸¸¸¸¸¸ŹŹŹŹŹŹŹŹ¸¸¸¸¸¸¸ŽŽŽŽŽŽ¸¸¸¸¸¸¸zzzzzzzzzz";
@@ -404,7 +404,7 @@ function hello() {
         document.getElementById("hello").innerHTML = "I hope your day is going well.  How bout some TromCards!";
     }
     else if (hour === 11) {
-        document.getElementById("hello").innerHTML = "Beat one of the 9 TromCard decks before lunch --> Brag to friends";
+        document.getElementById("hello").innerHTML = "Beat one of the 9 TromCard decks before lunch --> Brag to friends!";
     }
     else if (hour === 12) {
         document.getElementById("hello").innerHTML = "I'll have a turkey sandwich, french onion soup, and a side of TromCards";
