@@ -97,7 +97,7 @@ function heart() {
     })
 }
 
-//super dry.  have not repeated myself even once..
+//dry as the sahara..  have not repeated myself even once..
 function spade() {
     clonedCards = [...spades];
     removeCard()
@@ -237,6 +237,7 @@ function full() {
         }
     })
 }
+
 //splice will return the spliced and modify resulting arr
 //mathfloor & random to generate missing card
 function removeCard() {
