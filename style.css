@@ -1,5 +1,8 @@
 body {
-    background: linear-gradient(-75deg, rgb(3, 245, 3), white , rgb(16, 202, 235), white);
+    /* first tc gradient */
+    /* background: linear-gradient(-75deg, rgb(3, 245, 3), white , rgb(16, 202, 235), white); */
+    /* halloween grad */
+    background: linear-gradient(-75deg, rgb(228, 188, 188), white , #FF9933, white);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
@@ -27,7 +30,8 @@ body {
     width: 300px;
     border: 1px solid black;
     border-radius: 33px;
-    background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white);
+    background: linear-gradient(-75deg, #FF9933, white ,grey, white);
+    /* background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white); */
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
@@ -36,10 +40,12 @@ body {
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
+    align-items: center;
     color: rgb(28, 55, 173);
     outline: none;
     display: inline-block;
     margin: 10px;
+    /* padding-top: 20%; */
    
 }
 
@@ -96,7 +102,7 @@ body {
     color: rgb(49, 149, 207);
 }
 #hearts {
-    color: red;
+    color: pink;
 }
 #spades {
     color: black;
@@ -108,7 +114,7 @@ body {
     color: rgb(78, 67, 67);
 }
 #clickme {
-    color: blueviolet;
+    color: red;
 }
 #singles {
     color: orange;
@@ -123,7 +129,7 @@ body {
     color: white;
 }
 #hiclick {
-    color: white;
+    color: rgb(73, 173, 48);
 }
 @media all and (max-width: 422px) and (min-width: 377px) {
     #whole {

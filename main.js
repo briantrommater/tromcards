@@ -33,7 +33,7 @@ function club() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 444  //set interval in milliseconds 
+        interval: 2000 //set interval in milliseconds 
     })
     //make game buttons disappear and go to carousel
     let theseDisappear = document.getElementsByClassName("begin");
@@ -58,7 +58,7 @@ function diamond() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 444
+        interval: 250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -81,7 +81,7 @@ function heart() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 444 
+        interval: 3500
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -104,7 +104,7 @@ function spade() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 444
+        interval: 5000
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
