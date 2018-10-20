@@ -2,7 +2,7 @@ body {
     /* first tc gradient */
     background: linear-gradient(-75deg, rgb(3, 245, 3), white , rgb(16, 202, 235), white);
     /* halloween grad */
-    /* background: linear-gradient(-75deg, rgb(228, 188, 188), white , #FF9933, white); */
+    /* background: linear-gradient(-75deg, rgb(228, 188, 188), white , #00FF2D, white); */
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
@@ -30,7 +30,7 @@ body {
     width: 300px;
     border: 1px solid black;
     border-radius: 33px;
-    /* background: linear-gradient(-75deg, #FF9933, white ,grey, white); */
+    /* background: linear-gradient(-75deg, #00FF2D, white ,#00FF2D, white); */
     background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
@@ -166,7 +166,7 @@ body {
         width: 160px;
         border: 1px solid black;
         border-radius: 33px;
-        background: linear-gradient(-75deg, #FF9933, white ,grey, white);
+        background: linear-gradient(-75deg, #00FF2D, white ,#00FF2D, white);
         /* background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white); */
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
@@ -217,7 +217,7 @@ body {
         width: 130px;
         border: 1px solid black;
         border-radius: 33px;
-        background: linear-gradient(-75deg, #FF9933, white ,grey, white);
+        background: linear-gradient(-75deg, #00FF2D, white ,#00FF2D, white);
         /* background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white); */
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
@@ -269,7 +269,7 @@ body {
         width: 110px;
         border: 1px solid black;
         border-radius: 33px;
-        background: linear-gradient(-75deg, #FF9933, white ,grey, white);
+        background: linear-gradient(-75deg, #00FF2D, white ,#00FF2D, white);
         /* background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white); */
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
@@ -320,7 +320,7 @@ body {
         width: 200px;
         border: 1px solid black;
         border-radius: 33px;
-        background: linear-gradient(-75deg, #FF9933, white ,grey, white);
+        background: linear-gradient(-75deg, #00FF2D, white ,#00FF2D, white);
         /* background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white); */
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
@@ -372,7 +372,7 @@ body {
         width: 200px;
         border: 1px solid black;
         border-radius: 33px;
-        background: linear-gradient(-75deg, #FF9933, white ,grey, white);
+        background: linear-gradient(-75deg, #00FF2D, white ,#00FF2D, white);
         /* background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white); */
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
@@ -423,7 +423,7 @@ body {
         width: 130px;
         border: 1px solid black;
         border-radius: 33px;
-        background: linear-gradient(-75deg, #FF9933, white ,grey, white);
+        background: linear-gradient(-75deg, #00FF2D, white ,#00FF2D, white);
         /* background: linear-gradient(-75deg, yellow, white , rgb(3, 245, 3), white); */
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;

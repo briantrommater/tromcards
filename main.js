@@ -319,6 +319,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 //get an integer 0-59, set farts to 8.5% or 1 in 12 clicks
 //use modulus to confuse user on why a random fart?
 //that old gag...
+//testing a new high percentage fart mode
 function guessCard(card) {
     let date = new Date();
     let sec = date.getSeconds();
@@ -326,19 +327,19 @@ function guessCard(card) {
         document.querySelector("#mariowin").play();
     }
     else if (sec % 3 === 0) {
-        document.querySelector("#donkeykong").play();
-    }
-    else if (sec % 5 === 0) {
-        document.querySelector("#mario").play();
-    }
-    else if (sec % 13 === 0) {
-        document.querySelector("#fart1").play();
-    }
-    else if (sec % 17 === 0) {
         document.querySelector("#fart2").play();
     }
-    else {
+    else if (sec % 5 === 0) {
         document.querySelector("#pacman").play();
+    }
+    else if (sec % 7 === 0) {
+        document.querySelector("#donkeykong").play();
+    }
+    else if (sec % 11 === 0) {
+        document.querySelector("#mario").play();
+    }
+    else {
+        document.querySelector("#fart1").play();
     }
     
 }
@@ -364,87 +365,6 @@ function hiclick() {
 function restart() {
     location.reload(true);
 }
-//customized greetings based on hour of day
-function hello() {
-    let date = new Date();
-    let hour = date.getHours();
-    if (hour === 14) {
-        document.getElementById("hello").innerHTML = "Play TromCards before 3pm or else...";
-    }
-    else if (hour === 15) {
-        document.getElementById("hello").innerHTML = "It's a beautiful day for a game of TromCards...";
-    }
-    else if (hour === 16) {
-        document.getElementById("hello").innerHTML = "Work will be over soon,, kill some time with TromCards";
-    }
-    else if (hour === 17) {
-        document.getElementById("hello").innerHTML = "Quick game of TromCards before dinner time?";
-    }
-    else if (hour === 18) {
-        document.getElementById("hello").innerHTML = "Beating the game involves knowing the missing card";
-    }
-    else if (hour === 19) {
-        document.getElementById("hello").innerHTML = "Would be great to play TromCards before 8...";
-    }
-    else if (hour === 20) {
-        document.getElementById("hello").innerHTML = "Nothing on TV, let's play TromCards!";
-    }
-    else if (hour === 21) {
-        document.getElementById("hello").innerHTML = "Games have different timing and get harder at the bottom";
-    }
-    else if (hour === 22) {
-        document.getElementById("hello").innerHTML = "Boy, I'm getting tired... quick game of TromCard before bed?";
-    }
-    else if (hour === 23) {                            
-        document.getElementById("hello").innerHTML = "The day is almost over, don't go to bed until you beat TromCards";
-    }
-    else if (hour === 0) {
-        document.getElementById("hello").innerHTML = "Someone's enjoying some late night TromCards :)";
-    }
-    else if (hour === 1) {
-        document.getElementById("hello").innerHTML = "You're quite the night owl, and TromCards is quite addictive";
-    }
-    else if (hour === 2) {
-        document.getElementById("hello").innerHTML = "Don't you have to work tomorrow? Oh well,, quick game of TromCards?";
-    }
-    else if (hour === 3) {
-        document.getElementById("hello").innerHTML = "Hmmm.. TromCards this late??  I would NOT tell your doctor about this";
-    }
-    else if (hour === 4) {
-        document.getElementById("hello").innerHTML = "ZZZZZZZ¸¸¸¸¸¸¸ŹŹŹŹŹŹŹŹ¸¸¸¸¸¸¸ŽŽŽŽŽŽ¸¸¸¸¸¸¸zzzzzzzzzz";
-    }
-    else if (hour === 5) {
-        document.getElementById("hello").innerHTML = "Play TromCards, hit snooze, repeat,,,,,";
-    }
-    else if (hour === 6) {
-        document.getElementById("hello").innerHTML = "Good morning! It's a brand new day.  Make it a TromCards day!";
-    }
-    else if (hour === 7) {
-        document.getElementById("hello").innerHTML = "Don't forget your phone, BUT you can always play TromCards on laptop";
-    }
-    else if (hour === 8) {
-        document.getElementById("hello").innerHTML = "Do OR Don't play TromCards while you are driving to work?";
-    }
-    else if (hour === 9) {
-        document.getElementById("hello").innerHTML = "Nothing will get done till at least 10am,,, might as well play some TromCards";
-    }
-    else if (hour === 10) {
-        document.getElementById("hello").innerHTML = "I hope your day is going well.  How bout some TromCards!";
-    }
-    else if (hour === 11) {
-        document.getElementById("hello").innerHTML = "Beat one of the 9 TromCard decks before lunch --> Brag to friends!";
-    }
-    else if (hour === 12) {
-        document.getElementById("hello").innerHTML = "I'll have a turkey sandwich, french onion soup, and a side of TromCards";
-    }
-    else {
-        document.getElementById("hello").innerHTML = "Welcome to TromCards!";
-    }
-}
-hello();
-
-
-
 
 
 
