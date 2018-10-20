@@ -6,6 +6,12 @@ let deckOfCards = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', '
 '9C', '9H', '9S', '9D', '10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH',
 'QS', 'QD', 'KC', 'KH', 'KS', 'KD', 'AC', 'AH', 'AS', 'aceD'];
 
+let doubleDeck = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', '4S', '4D',
+'5C', '5H', '5S', '5D', '6C', '6H', '6S', '6D','7C', '7H', '7S', '7D', '8C', '8H', '8S', '8D',
+'9C', '9H', '9S', '9D', '10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH',
+'QS', 'QD', 'KC', 'KH', 'KS', 'KD', 'AC', 'AH', 'AS', 'aceD', '2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', '4S', '4D', '5C', '5H', '5S', '5D', '6C', '6H', '6S', '6D','7C', '7H', '7S', '7D', '8C', '8H', '8S', '8D', '9C', '9H', '9S', '9D', '10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH',
+'QS', 'QD', 'KC', 'KH', 'KS', 'KD', 'AC', 'AH', 'AS', 'aceD'];
+
 let diamonds = ['2D', '3D', '4D', '5D', '6D', '7D', '8D', '9D', '10D', 'JD', 'QD', 'KD', 'aceD'];
 let hearts = ['2H', '3H', '4H', '5H', '6H', '7H', '8H', '9H', '10H', 'JH', 'QH', 'KH', 'AH'];
 let spades = ['2S', '3S', '4S', '5S', '6S', '7S', '8S', '9S', '10S', 'JS', 'QS', 'KS', 'AS'];
@@ -33,7 +39,7 @@ function club() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 2000 //set interval in milliseconds 
+        interval: 1500 //set interval in milliseconds 
     })
     //make game buttons disappear and go to carousel
     let theseDisappear = document.getElementsByClassName("begin");
@@ -81,7 +87,7 @@ function heart() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 3500
+        interval: 3000
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -104,7 +110,7 @@ function spade() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 5000
+        interval: 4500
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -122,13 +128,12 @@ function spade() {
     })
 }
 
-//dry as the sahara..  have not repeated myself even once..
 function halfDeckR() {
     clonedCards = [...halfDeckRed];
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 2500
+        interval: 3000
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -151,7 +156,7 @@ function halfDeckB() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 2500
+        interval: 3000
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -176,7 +181,7 @@ function number() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 2500
+        interval: 3000
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -199,7 +204,7 @@ function picture() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 2500
+        interval: 3000
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -240,12 +245,37 @@ function full() {
     })
 }
 
+function twoDeck() {
+    clonedCards = [...doubleDeck];
+    console.log(clonedCards);
+    removeCard()
+    $('.carousel').carousel('dispose')
+    $('.carousel').carousel({
+        interval: 5800
+    })
+    let theseDisappear = document.getElementsByClassName("begin");
+        for (let thing of theseDisappear) {
+            thing.style.display = "none";
+    }
+    $('.carousel').on('slid.bs.carousel', function (e) {
+        let num_cards = $('.carousel-item').length
+        if ( (num_cards - 1) === e.to) {
+            $('.carousel-inner').empty();
+            let fiftyTwoAppear = document.getElementsByClassName("containerA");
+                for (let stuff of fiftyTwoAppear) {
+                    stuff.style.display = "block";
+                }
+        }
+    })
+}
+
 //splice will return the spliced and modify resulting arr
 //mathfloor & random to generate missing card
 function removeCard() {
     //remove a random card
     let randomCardIdx = Math.floor(Math.random() * clonedCards.length);
     missingCard = clonedCards.splice(randomCardIdx, 1);
+    console.log(missingCard)
     // shuffle the cards
     let shuffled = shuffle(clonedCards);
     // empty the carousel
@@ -292,7 +322,6 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 function guessCard(card) {
     let date = new Date();
     let sec = date.getSeconds();
-    console.log(sec);
     if (missingCard == card) {
         document.querySelector("#mariowin").play();
     }
@@ -352,7 +381,7 @@ function hello() {
         document.getElementById("hello").innerHTML = "Quick game of TromCards before dinner time?";
     }
     else if (hour === 18) {
-        document.getElementById("hello").innerHTML = "Click Hearts if you love TromCards";
+        document.getElementById("hello").innerHTML = "Beating the game involves knowing the missing card";
     }
     else if (hour === 19) {
         document.getElementById("hello").innerHTML = "Would be great to play TromCards before 8...";
@@ -361,7 +390,7 @@ function hello() {
         document.getElementById("hello").innerHTML = "Nothing on TV, let's play TromCards!";
     }
     else if (hour === 21) {
-        document.getElementById("hello").innerHTML = "Fun fact: 99% of people can not beat fulldeck TromCards";
+        document.getElementById("hello").innerHTML = "Games have different timing and get harder at the bottom";
     }
     else if (hour === 22) {
         document.getElementById("hello").innerHTML = "Boy, I'm getting tired... quick game of TromCard before bed?";
@@ -413,7 +442,6 @@ function hello() {
     }
 }
 hello();
-
 
 
 
