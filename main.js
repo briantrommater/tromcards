@@ -327,16 +327,31 @@ function guessCard(card) {
         document.querySelector("#mariowin").play();
     }
     else if (sec % 3 === 0) {
-        document.querySelector("#fart2").play();
-    }
-    else if (sec % 5 === 0) {
         document.querySelector("#pacman").play();
     }
+    else if (sec % 5 === 0) {
+        document.querySelector("#fart2").play();
+    }
     else if (sec % 7 === 0) {
-        document.querySelector("#donkeykong").play();
+        document.querySelector("#fart3").play();
     }
     else if (sec % 11 === 0) {
+        document.querySelector("#donkeykong").play();
+    }
+    else if (sec % 13 === 0) {
         document.querySelector("#mario").play();
+    }
+    else if (sec % 17 === 0) {
+        document.querySelector("#fart4").play();
+    }
+    else if (sec % 19 === 0) {
+        document.querySelector("#fart5").play();
+    }
+    else if (sec % 23 === 0) {
+        document.querySelector("#fart6").play();
+    }
+    else if (sec % 29 === 0) {
+        document.querySelector("#fart7").play();
     }
     else {
         document.querySelector("#fart1").play();
