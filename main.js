@@ -353,6 +353,9 @@ function guessCard(card) {
     else if (sec % 29 === 0) {
         document.querySelector("#fart7").play();
     }
+    else if (sec % 4 === 0) {
+        document.querySelector("#fart8").play();
+    }
     else {
         document.querySelector("#fart1").play();
     }
