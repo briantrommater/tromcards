@@ -45,6 +45,8 @@ body {
     outline: none;
     display: inline-block;
     margin: 10px;
+    top: 50%;
+    padding-top: 1.67%;
 }
 
 .start:hover {
