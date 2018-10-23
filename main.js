@@ -327,7 +327,7 @@ function guessCard(card) {
         document.querySelector("#mariowin").play();
         setTimeout(function restart() {
             location.reload(true);
-        }, 1200);
+        }, 2500);
     }
     else if (sec % 3 === 0) {
         document.querySelector("#pacman").play();
