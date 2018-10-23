@@ -1,7 +1,9 @@
 Welcome to TromCards!
 
-Try to remember the cards.  Click on missing card.
+Try to remember the cards.  
 
-Simple enough?  Click link below to play!
+Each game features a deck with one card missing.  
+
+Click link below to play!
 
 https://briantrommater.github.io/tromcards/

@@ -9,6 +9,13 @@ body {
 
 }
 
+.carousel-item {
+    height: 860px;
+} 
+.carousel-item img {
+    height: 860px;
+} 
+
 .cards {
     width: 7.42%;
     height: 120px;
@@ -55,6 +62,11 @@ body {
     background: #00FF2D;
 }
 
+#whole {
+    width: 40%;
+    margin: 0 auto;
+}
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -95,10 +107,6 @@ body {
 
 .begin {
     margin-left: 5%;
-}
-#whole {
-    width: 42%;
-    margin: 0 auto;
 }
 
 #clubs {

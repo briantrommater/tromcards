@@ -319,12 +319,15 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 //get an integer 0-59, set farts to 8.5% or 1 in 12 clicks
 //use modulus to confuse user on why a random fart?
 //that old gag...
-//testing a new high percentage fart mode
+//testing a new high percentage(57%) fart mode
 function guessCard(card) {
     let date = new Date();
     let sec = date.getSeconds();
     if (missingCard == card) {
         document.querySelector("#mariowin").play();
+        setTimeout(function restart() {
+            location.reload(true);
+        }, 1200);
     }
     else if (sec % 3 === 0) {
         document.querySelector("#pacman").play();
