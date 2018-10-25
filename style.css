@@ -1,6 +1,6 @@
 body {
     /* first tc gradient */
-    background: linear-gradient(-75deg, yellow, white , rgb(16, 202, 235), white);
+    background: linear-gradient(-75deg, #00FF2D, white , rgb(16, 202, 235), white);
     /* halloween grad */
     /* background: linear-gradient(-75deg, rgb(228, 188, 188), white , #00FF2D, white); */
     background-size: 200% 200%;
