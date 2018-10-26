@@ -38,7 +38,8 @@ body {
     border: 1px solid black;
     border-radius: 33px;
     /* background: linear-gradient(-75deg,white, grey, white, white); */
-    background: linear-gradient(-75deg, white, grey, white, white);
+    /* background: linear-gradient(-75deg, white, grey, white, white); */
+    background: rgba(255, 255, 255, 0.726);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
