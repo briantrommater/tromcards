@@ -1,12 +1,8 @@
 body {
-    /* first tc gradient */
     background: linear-gradient(-75deg, #00FF2D, white , rgb(16, 202, 235), white);
-    /* halloween grad */
-    /* background: linear-gradient(-75deg, rgb(228, 188, 188), white , #00FF2D, white); */
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
-
 }
 
 .carousel-item {
@@ -35,10 +31,9 @@ body {
 .start {
     height: 220px;
     width: 300px;
-    border: 1px solid black;
+    border: 2px solid lightblue;
+    box-shadow: 5px 10px darkblue;
     border-radius: 33px;
-    /* background: linear-gradient(-75deg,white, grey, white, white); */
-    /* background: linear-gradient(-75deg, white, grey, white, white); */
     background: rgba(255, 255, 255, 0.726);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
@@ -175,10 +170,10 @@ body {
     .start {
         height: 80px;
         width: 160px;
-        border: 1px solid black;
+        border: 2px solid lightblue;
+        box-shadow: 5px 10px darkblue;
         border-radius: 33px;
-        background: linear-gradient(-75deg,white, grey, white, white);
-        /* background: linear-gradient(-75deg, yellow, white , yellow, white); */
+        background: rgba(255, 255, 255, 0.726);
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
         animation: Gradient 3s ease infinite;
@@ -226,10 +221,10 @@ body {
     .start {
         height: 72px;
         width: 130px;
-        border: 1px solid black;
+        border: 2px solid lightblue;
+        box-shadow: 5px 10px darkblue;
         border-radius: 33px;
-        background: linear-gradient(-75deg,white, grey, white, white);
-        /* background: linear-gradient(-75deg, yellow, white , yellow, white); */
+        background: rgba(255, 255, 255, 0.726);
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
         animation: Gradient 3s ease infinite;
@@ -278,10 +273,10 @@ body {
     .start {
         height: 63px;
         width: 110px;
-        border: 1px solid black;
+        border: 2px solid lightblue;
+        box-shadow: 5px 10px darkblue;
         border-radius: 33px;
-        background: linear-gradient(-75deg,white, grey, white, white);
-        /* background: linear-gradient(-75deg, yellow, white , yellow, white); */
+        background: rgba(255, 255, 255, 0.726);
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
         animation: Gradient 3s ease infinite;
@@ -329,10 +324,10 @@ body {
     .start {
         height: 150px;
         width: 200px;
-        border: 1px solid black;
+        border: 2px solid lightblue;
+        box-shadow: 5px 10px darkblue;
         border-radius: 33px;
-        background: linear-gradient(-75deg,white, grey, white, white);
-        /* background: linear-gradient(-75deg, yellow, white , yellow, white); */
+        background: rgba(255, 255, 255, 0.726);
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
         animation: Gradient 3s ease infinite;
@@ -381,10 +376,10 @@ body {
     .start {
         height: 150px;
         width: 200px;
-        border: 1px solid black;
+        border: 2px solid lightblue;
+        box-shadow: 5px 10px darkblue;
         border-radius: 33px;
-        background: linear-gradient(-75deg,white, grey, white, white);
-        /* background: linear-gradient(-75deg, yellow, white , yellow, white); */
+        background: rgba(255, 255, 255, 0.726);
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
         animation: Gradient 3s ease infinite;
@@ -432,10 +427,10 @@ body {
     .start {
         height: 85px;
         width: 130px;
-        border: 1px solid black;
+        border: 2px solid lightblue;
+        box-shadow: 5px 10px darkblue;
         border-radius: 33px;
-        background: linear-gradient(-75deg,white, grey, white, white);
-        /* background: linear-gradient(-75deg, yellow, white , yellow, white); */
+        background: rgba(255, 255, 255, 0.726);
         background-size: 200% 200%;
         -webkit-animation: Gradient 3s ease infinite;
         animation: Gradient 3s ease infinite;
