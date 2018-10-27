@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(-75deg, #00FF2D, white , rgb(16, 202, 235), white);
+    background: linear-gradient(-75deg, darkcyan, white , rgb(16, 202, 235), white);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
@@ -53,9 +53,9 @@ body {
 }
 
 .start:hover {
-    color: #00FF2D;
-    border: 4px solid #00FF2D;
-    background: #00FF2D;
+    color: rgb(52, 79, 230);
+    border: 4px solid rgb(52, 79, 230);
+    background: rgb(52, 79, 230);
 }
 
 #whole {
@@ -123,8 +123,11 @@ body {
 #blackcards {
     color: rgb(78, 67, 67);
 }
-#clickme {
+#royalty {
     color: red;
+}
+#quads {
+    color:blue;
 }
 #singles {
     color: orange;
@@ -138,9 +141,7 @@ body {
 #doubleDeck {
     color: rgb(40, 194, 34);
 }
-#hiclick {
-    color: rgb(73, 173, 48);
-}
+
 @media all and (max-width: 422px) and (min-width: 377px) {
     #whole {
         width: 80%;

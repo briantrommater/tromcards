@@ -27,6 +27,8 @@ let singleDigits = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', 
 let broadways = ['10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH', 'QS', 'QD',
 'KC', 'KH', 'KS', 'KD', 'AC', 'AH', 'AS', 'aceD'];
 
+let easiest = ['aceD', 'AH', 'AC', 'AS'];
+let easier = ['KC', 'KH', 'KS', 'KD', 'QC', 'QH', 'QS', 'QD'];
 //declare some global variables
 let clonedCards = [];
 
@@ -268,6 +270,52 @@ function twoDeck() {
         }
     })
 }
+function quads() {
+    clonedCards = [...easiest];
+    console.log(clonedCards);
+    removeCard()
+    $('.carousel').carousel('dispose')
+    $('.carousel').carousel({
+        interval: 100
+    })
+    let theseDisappear = document.getElementsByClassName("begin");
+        for (let thing of theseDisappear) {
+            thing.style.display = "none";
+    }
+    $('.carousel').on('slid.bs.carousel', function (e) {
+        let num_cards = $('.carousel-item').length
+        if ( (num_cards - 1) === e.to) {
+            $('.carousel-inner').empty();
+            let fiftyTwoAppear = document.getElementsByClassName("containerA");
+                for (let stuff of fiftyTwoAppear) {
+                    stuff.style.display = "block";
+                }
+        }
+    })
+}
+function royalty() {
+    clonedCards = [...easier];
+    console.log(clonedCards);
+    removeCard()
+    $('.carousel').carousel('dispose')
+    $('.carousel').carousel({
+        interval: 250
+    })
+    let theseDisappear = document.getElementsByClassName("begin");
+        for (let thing of theseDisappear) {
+            thing.style.display = "none";
+    }
+    $('.carousel').on('slid.bs.carousel', function (e) {
+        let num_cards = $('.carousel-item').length
+        if ( (num_cards - 1) === e.to) {
+            $('.carousel-inner').empty();
+            let fiftyTwoAppear = document.getElementsByClassName("containerA");
+                for (let stuff of fiftyTwoAppear) {
+                    stuff.style.display = "block";
+                }
+        }
+    })
+}
 
 //splice will return the spliced and modify resulting arr
 //mathfloor & random to generate missing card
@@ -364,24 +412,7 @@ function guessCard(card) {
     }
     
 }
-//teach user what a losing sound is
-function click1() {
-    let date = new Date();
-    let sec = date.getSeconds();
-    if (sec % 3 === 0) {
-        document.querySelector("#pacman").play();
-    }
-    else if (sec % 5 === 0) {
-        document.querySelector("#mario").play();
-    }
-    else {
-        document.querySelector("#donkeykong").play();
-    }
-}
-//teach user what a winning sound is
-function hiclick() {
-    document.querySelector("#mariowin").play();
-}
+
 //new game
 function restart() {
     location.reload(true);
