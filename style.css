@@ -7,15 +7,11 @@ body {
 
 .carousel-item {
     height: 780px;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 } 
 .carousel-item img {
     height: 780px;
 } 
-
-/* carousel-fade {
-    transition: transform 2s ease, opacity .5s ease-out;
-
-} */
 
 .cards {
     width: 7.42%;
