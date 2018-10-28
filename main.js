@@ -276,7 +276,7 @@ function quads() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 100
+        interval: 250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
