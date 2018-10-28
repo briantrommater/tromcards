@@ -12,6 +12,11 @@ body {
     height: 780px;
 } 
 
+/* carousel-fade {
+    transition: transform 2s ease, opacity .5s ease-out;
+
+} */
+
 .cards {
     width: 7.42%;
     height: 120px;
