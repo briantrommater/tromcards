@@ -364,6 +364,18 @@ $('.carousel').on('slid.bs.carousel', function (e) {
             }
     }
 })
+
+function hourlySwitch(card) {
+    let date = new Date();
+    let hour = date.getHours();
+    if (hour % 2 ==0) {
+        guessCard(card);
+    }
+    else {
+        guessCardSafe(card);
+    }
+}
+
 //get an integer 0-59, set farts to 8.5% or 1 in 12 clicks
 //use modulus to confuse user on why a random fart?
 //that old gag...
@@ -413,31 +425,31 @@ function guessCard(card) {
     
 }
 
-//comment above out and below in for
 //professional fart-less mode :(
-// function guessCardSafe(card) {
-//     let date = new Date();
-//     let sec = date.getSeconds();
-//     if (missingCard == card) {
-//         document.querySelector("#mariowin").play();
-//         setTimeout(function restart() {
-//             location.reload(true);
-//         }, 2500);
-//     }
-//     else if (sec % 3 === 0) {
-//         document.querySelector("#donkeykong").play();
-//     }
-//     else if (sec % 5 === 0) {
-//         document.querySelector("#mario").play();
-//     }
-//     else {
-//         document.querySelector("#pacman").play();
-//     }
+function guessCardSafe(card) {
+    let date = new Date();
+    let sec = date.getSeconds();
+    if (missingCard == card) {
+        document.querySelector("#mariowin").play();
+        setTimeout(function restart() {
+            location.reload(true);
+        }, 2500);
+    }
+    else if (sec % 3 === 0) {
+        document.querySelector("#donkeykong").play();
+    }
+    else if (sec % 5 === 0) {
+        document.querySelector("#mario").play();
+    }
+    else {
+        document.querySelector("#pacman").play();
+    }
+}
 
-// //new game
-// function restart() {
-//     location.reload(true);
-// }
+//new game
+function restart() {
+    location.reload(true);
+}
 
 
 
