@@ -367,7 +367,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 //get an integer 0-59, set farts to 8.5% or 1 in 12 clicks
 //use modulus to confuse user on why a random fart?
 //that old gag...
-//testing a new high percentage(57%) fart mode
+//10-27 testing a new high percentage(57%) fart mode
 function guessCard(card) {
     let date = new Date();
     let sec = date.getSeconds();
@@ -381,10 +381,10 @@ function guessCard(card) {
         document.querySelector("#pacman").play();
     }
     else if (sec % 5 === 0) {
-        document.querySelector("#fart2").play();
+        document.querySelector("#fart8").play();
     }
     else if (sec % 7 === 0) {
-        document.querySelector("#fart3").play();
+        document.querySelector("#fart2").play();
     }
     else if (sec % 11 === 0) {
         document.querySelector("#donkeykong").play();
@@ -405,7 +405,7 @@ function guessCard(card) {
         document.querySelector("#fart7").play();
     }
     else if (sec % 4 === 0) {
-        document.querySelector("#fart8").play();
+        document.querySelector("#fart3").play();
     }
     else {
         document.querySelector("#fart1").play();
@@ -413,10 +413,31 @@ function guessCard(card) {
     
 }
 
-//new game
-function restart() {
-    location.reload(true);
-}
+//comment above out and below in for
+//professional fart-less mode :(
+// function guessCardSafe(card) {
+//     let date = new Date();
+//     let sec = date.getSeconds();
+//     if (missingCard == card) {
+//         document.querySelector("#mariowin").play();
+//         setTimeout(function restart() {
+//             location.reload(true);
+//         }, 2500);
+//     }
+//     else if (sec % 3 === 0) {
+//         document.querySelector("#donkeykong").play();
+//     }
+//     else if (sec % 5 === 0) {
+//         document.querySelector("#mario").play();
+//     }
+//     else {
+//         document.querySelector("#pacman").play();
+//     }
+
+// //new game
+// function restart() {
+//     location.reload(true);
+// }
 
 
 
