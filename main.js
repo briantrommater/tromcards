@@ -389,43 +389,53 @@ function guessCard(card) {
     let sec = date.getSeconds();
     if (missingCard == card) {
         document.querySelector("#mariowin").play();
-        document.body.style.background = "#7FFF00";
+        document.body.style.background = "Chartreuse";
         setTimeout(function restart() {
             location.reload(true);
         }, 3200);
-        document.body.style.background = "#7FFF00";
     }
     else if (sec % 3 === 0) {
+        document.body.style.background = "Maroon";
         document.querySelector("#pacman").play();
     }
     else if (sec % 5 === 0) {
+        document.body.style.background = "DeepPink";
         document.querySelector("#fart8").play();
     }
     else if (sec % 7 === 0) {
+        document.body.style.background = "IndianRed";
         document.querySelector("#fart2").play();
     }
     else if (sec % 11 === 0) {
+        document.body.style.background = "LightCoral";
         document.querySelector("#donkeykong").play();
     }
     else if (sec % 13 === 0) {
+        document.body.style.background = "MediumVioletRed";
         document.querySelector("#mario").play();
     }
     else if (sec % 17 === 0) {
+        document.body.style.background = "MediumOrchid";
         document.querySelector("#fart4").play();
     }
     else if (sec % 19 === 0) {
+        document.body.style.background = "Sienna";
         document.querySelector("#fart5").play();
     }
     else if (sec % 23 === 0) {
+        document.body.style.background = "Tomato";
         document.querySelector("#fart6").play();
     }
     else if (sec % 29 === 0) {
+        document.body.style.background = "SaddleBrown";
         document.querySelector("#fart7").play();
     }
     else if (sec % 4 === 0) {
+        document.body.style.background = "Peru";
         document.querySelector("#fart3").play();
     }
     else {
+        document.body.style.background = "FireBrick";
         document.querySelector("#fart1").play();
     }
     
@@ -437,18 +447,21 @@ function guessCardSafe(card) {
     let sec = date.getSeconds();
     if (missingCard == card) {
         document.querySelector("#mariowin").play();
-        document.body.style.background = "#7FFF00";
+        document.body.style.background = "Chartreuse";
         setTimeout(function restart() {
             location.reload(true);
         }, 2500);
     }
     else if (sec % 3 === 0) {
+        document.body.style.background = "DarkRed";
         document.querySelector("#donkeykong").play();
     }
     else if (sec % 5 === 0) {
+        document.body.style.background = "HotPink";
         document.querySelector("#mario").play();
     }
     else {
+        document.body.style.background = "FireBrick";
         document.querySelector("#pacman").play();
     }
 }
