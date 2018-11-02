@@ -1,4 +1,8 @@
-
+$(document).ready(function() {
+    var colors = ["#739600", "#1F5EA8", "#F72C2C", "#FA5021", "#FB9F54", "#FFAD00,#FFEB3B", "#55C934", "#4CAF58", "#1FA895", "#1FD2DB", "#2196F3", "#61338F", "#8F3378", "#E91E63", "#B32E37"];
+    var rand = Math.floor(Math.random() * colors.length);
+    $('.change').css("background-color", colors[rand]);
+});
 //these are arrays holding the 9 games
 //all the cool kids are using es6
 let deckOfCards = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', '4S', '4D',
@@ -385,9 +389,11 @@ function guessCard(card) {
     let sec = date.getSeconds();
     if (missingCard == card) {
         document.querySelector("#mariowin").play();
+        document.body.style.background = "#7FFF00";
         setTimeout(function restart() {
             location.reload(true);
-        }, 2500);
+        }, 3200);
+        document.body.style.background = "#7FFF00";
     }
     else if (sec % 3 === 0) {
         document.querySelector("#pacman").play();
@@ -431,6 +437,7 @@ function guessCardSafe(card) {
     let sec = date.getSeconds();
     if (missingCard == card) {
         document.querySelector("#mariowin").play();
+        document.body.style.background = "#7FFF00";
         setTimeout(function restart() {
             location.reload(true);
         }, 2500);
