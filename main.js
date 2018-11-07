@@ -460,6 +460,10 @@ function guessCardSafe(card) {
         document.body.style.background = "HotPink";
         document.querySelector("#mario").play();
     }
+    else if (sec % 11 === 0) {
+        document.body.style.background = "Sienna";
+        document.querySelector("#fart8").play();
+    }
     else {
         document.body.style.background = "FireBrick";
         document.querySelector("#pacman").play();
