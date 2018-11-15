@@ -386,47 +386,51 @@ function guessCard(card) {
         }, 3200);
     }
     else if (sec % 3 === 0) {
-        document.body.style.background = "Maroon";
-        document.querySelector("#pacman").play();
-    }
-    else if (sec % 5 === 0) {
-        document.body.style.background = "DeepPink";
+        document.body.style.background = "DodgerBlue";
         document.querySelector("#fart8").play();
     }
+    else if (sec % 5 === 0) {
+        document.body.style.background = "#DD4132";
+        document.querySelector("#fart9").play();
+    }
     else if (sec % 7 === 0) {
-        document.body.style.background = "IndianRed";
+        document.body.style.background = "#FE840E";
         document.querySelector("#fart2").play();
     }
     else if (sec % 11 === 0) {
-        document.body.style.background = "LightCoral";
-        document.querySelector("#donkeykong").play();
+        document.body.style.background = "#D69C2F";
+        document.querySelector("#fart10").play();
     }
     else if (sec % 13 === 0) {
-        document.body.style.background = "MediumVioletRed";
-        document.querySelector("#mario").play();
+        document.body.style.background = "#755139";
+        document.querySelector("#fart11").play();
     }
     else if (sec % 17 === 0) {
-        document.body.style.background = "MediumOrchid";
+        document.body.style.background = "#838487";
         document.querySelector("#fart4").play();
     }
     else if (sec % 19 === 0) {
-        document.body.style.background = "Sienna";
+        document.body.style.background = "#6B5B95";
         document.querySelector("#fart5").play();
     }
     else if (sec % 23 === 0) {
-        document.body.style.background = "Tomato";
+        document.body.style.background = "#6F9FD8";
         document.querySelector("#fart6").play();
     }
     else if (sec % 29 === 0) {
-        document.body.style.background = "SaddleBrown";
+        document.body.style.background = "#E8B5CE";
         document.querySelector("#fart7").play();
     }
+    else if (sec % 31 === 0) {
+        document.body.style.background = "#616247";
+        document.querySelector("#fart12").play();
+    }
     else if (sec % 4 === 0) {
-        document.body.style.background = "Peru";
+        document.body.style.background = "#E94B3C";
         document.querySelector("#fart3").play();
     }
     else {
-        document.body.style.background = "FireBrick";
+        document.body.style.background = "#00539C";
         document.querySelector("#fart1").play();
     }
     
@@ -444,7 +448,7 @@ function guessCardSafe(card) {
         }, 2500);
     }
     else if (sec % 3 === 0) {
-        document.body.style.background = "DarkRed";
+        document.body.style.background = "#2E4A62";
         document.querySelector("#donkeykong").play();
     }
     else if (sec % 5 === 0) {
@@ -456,7 +460,7 @@ function guessCardSafe(card) {
         document.querySelector("#fart8").play();
     }
     else {
-        document.body.style.background = "FireBrick";
+        document.body.style.background = "#DC4C46";
         document.querySelector("#pacman").play();
     }
 }
