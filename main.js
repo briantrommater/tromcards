@@ -1,10 +1,5 @@
-$(document).ready(function() {
-    var colors = ["#739600", "#1F5EA8", "#F72C2C", "#FA5021", "#FB9F54", "#FFAD00,#FFEB3B", "#55C934", "#4CAF58", "#1FA895", "#1FD2DB", "#2196F3", "#61338F", "#8F3378", "#E91E63", "#B32E37"];
-    var rand = Math.floor(Math.random() * colors.length);
-    $('.change').css("background-color", colors[rand]);
-});
+
 //these are arrays holding the 9 games
-//all the cool kids are using es6
 let deckOfCards = ['2C', '2H', '2S', '2D', '3C', '3H', '3S', '3D', '4C', '4H', '4S', '4D',
 '5C', '5H', '5S', '5D', '6C', '6H', '6S', '6D','7C', '7H', '7S', '7D', '8C', '8H', '8S', '8D',
 '9C', '9H', '9S', '9D', '10C', '10H', '10S', '10D', 'JC', 'JH', 'JS', 'JD', 'QC', 'QH',
@@ -180,8 +175,6 @@ function halfDeckB() {
     })
 }
 
-//by the way... 3 dots is a 'spread' in es6
-//it's not like i'm saying 'to be continued...'
 function number() {
     clonedCards = [...singleDigits];
     removeCard()
@@ -210,7 +203,7 @@ function picture() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1800
+        interval: 2400
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -372,7 +365,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 function hourlySwitch(card) {
     let date = new Date();
     let hour = date.getHours();
-    if (hour < 18) {
+    if (hour < 19 || hour > 5) {
         guessCardSafe(card);
     }
     else {
@@ -380,10 +373,8 @@ function hourlySwitch(card) {
     }
 }
 
-//get an integer 0-59, set farts to 8.5% or 1 in 12 clicks
-//use modulus to confuse user on why a random fart?
-//that old gag...
-//10-27 testing a new high percentage(57%) fart mode
+//get an integer 0-59
+//modulus to randomize
 function guessCard(card) {
     let date = new Date();
     let sec = date.getSeconds();
@@ -474,8 +465,4 @@ function guessCardSafe(card) {
 function restart() {
     location.reload(true);
 }
-
-
-
-
 

@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(-75deg, darkcyan, white , rgb(16, 202, 235), white);
+    background: linear-gradient(-60deg, #F5624D, #34A65F, white, dodgerblue);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
@@ -9,6 +9,7 @@ body {
     height: 780px;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 } 
+
 .carousel-item img {
     height: 780px;
 } 
@@ -20,11 +21,12 @@ body {
     font-size: 0;
     margin-bottom: 7px;
     position: relative;
-     
 }
+
 .block {
     display: block;
 }
+
 .containerA {
     display: none;
 }
