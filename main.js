@@ -365,11 +365,11 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 function hourlySwitch(card) {
     let date = new Date();
     let hour = date.getHours();
-    if (hour < 19 || hour > 5) {
-        guessCardSafe(card);
+    if (hour > 19 || hour < 5) {
+        guessCard(card);
     }
     else {
-        guessCard(card);
+        guessCardSafe(card);
     }
 }
 
