@@ -53,6 +53,7 @@ body {
     margin: 10px;
     top: 50%;
     padding-top: 1.67%;
+    cursor: pointer;
 }
 
 .start:hover {
