@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(-60deg, #F5624D, #34A65F, white, dodgerblue);
+    background: linear-gradient(-60deg, #0048BA, #5DADEC, white, dodgerblue);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
@@ -214,7 +214,7 @@ body {
         height: 557px;
     } 
     .cards {
-        width: 13.3%;
+        width: 12.3%;
         height: 57px;
         display: inline-block;
         font-size: 0;

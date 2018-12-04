@@ -330,12 +330,14 @@ function removeCard() {
         createCard(card)
     }
 }
+
 //nasty shuffle :)
 function shuffle(arr) {
     return arr.map(i => [Math.random(), i])
     .sort((a, b) => a[0] - b[0])
     .map(i => i[1])
 }
+
 //must have active class else carousel wont start
 function createCard(img_src) {
     let activeClass = '';
@@ -343,13 +345,14 @@ function createCard(img_src) {
     if ($('.carousel-item').length === 0) {// are we creating the first card?
         activeClass = 'active';
     }
-//lets not write 52 carousels.. that would be ridiculous
+    //lets not write 52 carousels.. that would be ridiculous
     let card = `<div class="carousel-item ${activeClass}">
         <img class="d-block w-100 shuffle" src="images/${img_src}.jpg" alt=" slide">
     </div>`
 
     $('.carousel-inner').append(card);
 }
+
 //if the carousel has finished, let's go to end screen
 $('.carousel').on('slid.bs.carousel', function (e) {
     let num_cards = $('.carousel-item').length
