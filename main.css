@@ -1,8 +1,9 @@
 body {
-    background: linear-gradient(-45deg, #0048BA, #5DADEC, white, dodgerblue);
+    background-image: url("greenfelt.jpg");
+    /* background: linear-gradient(-45deg, #0048BA, #5DADEC, white, dodgerblue);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
-    animation: Gradient 3s ease infinite;
+    animation: Gradient 3s ease infinite; */
 }
 
 .carousel-item {
@@ -66,7 +67,7 @@ body {
     margin: 0 auto;
 }
 
-@-webkit-keyframes Gradient {
+/* @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
 	}
@@ -88,7 +89,7 @@ body {
 	100% {
 		background-position: 0% 50%
 	}
-}
+} */
 
 .d-block {
     border-radius: 6%;
