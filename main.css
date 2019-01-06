@@ -146,6 +146,18 @@ body {
     color: rgb(40, 194, 34);
 }
 
+#hello, .endQ {
+    color: green;
+    border: 3px inset black;
+    box-shadow: 0 0 30px darkblue;
+    border-radius: 11px;
+    width: 50;
+    margin-left: 1.1em;
+    margin-top: 0.5em;
+    display: inline-block;
+    padding: 0.2em;
+}
+
 @media all and (max-width: 422px) and (min-width: 377px) {
     #whole {
         width: 80%;
