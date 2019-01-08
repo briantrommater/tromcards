@@ -147,15 +147,16 @@ body {
 }
 
 #hello, .endQ {
-    color: green;
+    color: #76D7EA;
     border: 3px inset black;
     box-shadow: 0 0 30px darkblue;
     border-radius: 11px;
     width: 50;
-    margin-left: 1.1em;
+    margin-left: 2em;
     margin-top: 0.5em;
     display: inline-block;
     padding: 0.2em;
+    /* font-size: 7em; */
 }
 
 @media all and (max-width: 422px) and (min-width: 377px) {
@@ -267,10 +268,10 @@ body {
         margin: 0 auto;
     }
     #hello {
-        font-size: 17px;
+        font-size: 15px;
     }
     .endQ {
-        font-size: 22px;
+        font-size: 15px;
     }
     .carousel-item {
         height: 475px;
@@ -308,7 +309,7 @@ body {
         margin: 6.5px;   
     }
     .begin {
-        margin-left: 8.2%;
+        margin-left: 10%;
     }
 }
 
