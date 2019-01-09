@@ -131,6 +131,8 @@ function spade() {
 
 function halfDeckR() {
     clonedCards = [...halfDeckRed];
+    document.querySelector("#shuffle").play();
+    setTimeout(() => {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
@@ -150,10 +152,13 @@ function halfDeckR() {
                 }
         }
     })
+    }, 3500);
 }
 
 function halfDeckB() {
     clonedCards = [...halfDeckBlack];
+    document.querySelector("#shuffle").play();
+    setTimeout(() => {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
@@ -173,6 +178,7 @@ function halfDeckB() {
                 }
         }
     })
+    }, 3500);
 }
 
 function number() {
@@ -223,6 +229,8 @@ function picture() {
 
 function full() {
     clonedCards = [...deckOfCards];
+    document.querySelector("#shuffle").play();
+    setTimeout(() => {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
@@ -242,6 +250,7 @@ function full() {
                 }
         }
     })
+    }, 3500);
 }
 
 function twoDeck() {
@@ -267,6 +276,7 @@ function twoDeck() {
         }
     })
 }
+
 function quads() {
     clonedCards = [...easiest];
     console.log(clonedCards);
