@@ -24,6 +24,11 @@ body {
     position: relative;
 }
 
+.cards:hover {
+    border: 4px solid rgb(52, 79, 230);
+    background: dodgerblue;
+}
+
 .block {
     display: block;
 }
