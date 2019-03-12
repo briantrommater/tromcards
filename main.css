@@ -1,6 +1,6 @@
 body {
     /* background-image: url("greenfelt.jpg"); */
-    background: linear-gradient(-45deg, #0048BA, #5DADEC, white, dodgerblue);
+    background: linear-gradient(-45deg, #66FF66 ,#299617, white, #87FF2A);
     background-size: 200% 200%;
     -webkit-animation: Gradient 3s ease infinite;
     animation: Gradient 3s ease infinite;
