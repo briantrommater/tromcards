@@ -9,7 +9,8 @@ class Game extends Component {
     gameCards: [],
     missingCard: "",
     cardCounter: 0,
-    speed: 500,
+    speed: 2500,
+    countdown: 3,
     pickCard: false,
     startGame: false
   };
@@ -22,7 +23,7 @@ class Game extends Component {
       },
       () => {
         if (this.state.deck.length > 0) {
-          const speed = this.state.speed;
+          const { speed } = this.state;
           let gameCards = this.state.deck;
           let missingCard =
             gameCards[Math.floor(Math.random() * gameCards.length)];
@@ -35,34 +36,45 @@ class Game extends Component {
             gameCards,
             missingCard
           });
-          setTimeout(() => {
+          this.countdownTimer = setInterval(() => {
+            let { countdown } = this.state;
+            countdown > 1 ? countdown-- : clearInterval(this.countdownTimer);
+            this.setState({ countdown });
+          }, 1000);
+          this.waitForCountdown = setTimeout(() => {
             this.setState({ startGame: true });
-            this.mounted = setInterval(() => {
+            this.displayCardsOneByOne = setInterval(() => {
               let { cardCounter } = this.state;
               cardCounter++;
               this.setState({ cardCounter });
               if (this.state.cardCounter >= this.state.gameCards.length - 1) {
-                clearInterval(this.mounted);
-                setTimeout(() => {
+                clearInterval(this.displayCardsOneByOne);
+                this.lastCardShown = setTimeout(() => {
                   this.setState({ pickCard: true });
                   console.log(this.state);
                 }, speed);
               }
             }, speed);
-          }, 2000);
+          }, 3000);
         }
       }
     );
   }
 
   componentWillUnmount() {
-    clearInterval(this.mounted);
+    clearInterval(this.countdownTimer);
+    clearTimeout(this.waitForCountdown);
+    clearInterval(this.displayCardsOneByOne);
+    clearTimeout(this.lastCardShown);
   }
 
   onClick = e => {
     if (e.target.id === this.state.missingCard) {
       document.getElementById("win").onended = () => {
-        this.props.history.push("/");
+        this.props.history.push({
+          pathname: "/",
+          state: { speed: this.state.speed }
+        });
       };
       document.getElementById("win").play();
     } else {
@@ -82,6 +94,7 @@ class Game extends Component {
           alt="card"
         />
       ) : null;
+
     const displayCards =
       this.state.deck.length > 0
         ? this.state.deck.map(card => {
@@ -102,7 +115,11 @@ class Game extends Component {
 
     return (
       <div className="Game">
-        {this.state.startGame ? displayGame : <h1>Get Ready</h1>}
+        {this.state.startGame ? (
+          displayGame
+        ) : (
+          <h1 className="countdown">{this.state.countdown}</h1>
+        )}
         <audio src={loseSound} id="fart" />
         <audio src={winSound} id="win" />
       </div>

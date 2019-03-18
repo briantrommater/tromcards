@@ -67,6 +67,12 @@ class Dashboard extends Component {
     speed: 2500
   };
 
+  componentDidMount() {
+    if (this.props.location.state && this.props.location.state.speed) {
+      this.setState({ speed: this.props.location.state.speed });
+    }
+  }
+
   onGameClick = cards => {
     this.props.history.push({
       pathname: "/game",
@@ -150,57 +156,54 @@ class Dashboard extends Component {
     );
 
     return (
-      <div className="Dashboard">
-        <section>
-          {setDifficultyButtons}
-          <div className="games">
-            <button
-              onClick={this.onGameClick.bind(this, this.state.clubs)}
-              className="start"
-            >
-              Clubs
-            </button>
-            <button
-              onClick={this.onGameClick.bind(this, this.state.diamonds)}
-              className="start"
-            >
-              Diamonds
-            </button>
-            <button
-              onClick={this.onGameClick.bind(this, this.state.hearts)}
-              className="start"
-            >
-              Hearts
-            </button>
-            <button
-              onClick={this.onGameClick.bind(this, this.state.spades)}
-              className="start"
-            >
-              Spades
-            </button>
-            <button
-              onClick={this.onGameClick.bind(this, redCards)}
-              className="start"
-            >
-              Red Cards
-            </button>
-            <button
-              onClick={this.onGameClick.bind(this, blackCards)}
-              className="start"
-            >
-              Black Cards
-            </button>
-            <button
-              onClick={this.onGameClick.bind(this, fullDeck)}
-              className="start"
-            >
-              Full Deck
-            </button>
-          </div>
-          <div className="display-deck">{displayDeck}</div>
-          <h1>TromCards in React</h1>
-        </section>
-      </div>
+      <section className="Dashboard">
+        {setDifficultyButtons}
+        <div className="games">
+          <button
+            onClick={this.onGameClick.bind(this, this.state.clubs)}
+            className="start"
+          >
+            Clubs
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, this.state.diamonds)}
+            className="start"
+          >
+            Diamonds
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, this.state.hearts)}
+            className="start"
+          >
+            Hearts
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, this.state.spades)}
+            className="start"
+          >
+            Spades
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, redCards)}
+            className="start"
+          >
+            Red Cards
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, blackCards)}
+            className="start"
+          >
+            Black Cards
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, fullDeck)}
+            className="start"
+          >
+            Full Deck
+          </button>
+        </div>
+        <div className="display-deck">{displayDeck}</div>
+      </section>
     );
   }
 }
