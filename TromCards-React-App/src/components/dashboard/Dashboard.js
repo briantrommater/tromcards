@@ -93,6 +93,16 @@ class Dashboard extends Component {
       ...this.state.clubs,
       ...this.state.spades
     ];
+    const twoDecks = [...fullDeck, ...fullDeck];
+    const sevenDecks = [...twoDecks, ...twoDecks, ...twoDecks, ...fullDeck];
+    const broadways = fullDeck.filter(card =>
+      ["a", "A", "K", "Q", "J", "1"].includes(card.charAt(0))
+    );
+    const singles = fullDeck.filter(card =>
+      ["2", "3", "4", "5", "6", "7", "8", "9"].includes(card.charAt(0))
+    );
+    const aces = fullDeck.filter(card => ["a", "A"].includes(card.charAt(0)));
+
     const displayDeck = fullDeck.map(card => {
       return (
         <img
@@ -159,6 +169,9 @@ class Dashboard extends Component {
       <section className="Dashboard">
         {setDifficultyButtons}
         <div className="games">
+          <button onClick={this.onGameClick.bind(this, aces)} className="start">
+            Aces
+          </button>
           <button
             onClick={this.onGameClick.bind(this, this.state.clubs)}
             className="start"
@@ -200,6 +213,30 @@ class Dashboard extends Component {
             className="start"
           >
             Full Deck
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, twoDecks)}
+            className="start"
+          >
+            Two Decks
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, sevenDecks)}
+            className="start"
+          >
+            Seven Decks
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, broadways)}
+            className="start"
+          >
+            Broadways
+          </button>
+          <button
+            onClick={this.onGameClick.bind(this, singles)}
+            className="start"
+          >
+            Singles
           </button>
         </div>
         <div className="display-deck">{displayDeck}</div>
