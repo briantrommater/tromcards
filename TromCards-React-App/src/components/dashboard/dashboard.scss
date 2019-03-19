@@ -44,7 +44,15 @@
   }
   .difficulty-buttons {
     .select-difficulty {
+      margin: 4px 2px;
       outline: none;
+      width: 15vw;
+      padding: 10px 0;
+      color: white;
+      font-weight: bolder;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
     }
     .select-difficulty-active {
       background-color: limegreen;

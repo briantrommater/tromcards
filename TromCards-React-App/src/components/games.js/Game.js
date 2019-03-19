@@ -70,6 +70,8 @@ class Game extends Component {
 
   onClick = e => {
     if (e.target.id === this.state.missingCard) {
+      document.getElementById("guessColor").style.backgroundColor =
+        "rgb(124, 252, 0)";
       document.getElementById("win").onended = () => {
         this.props.history.push({
           pathname: "/",
@@ -78,9 +80,17 @@ class Game extends Component {
       };
       document.getElementById("win").play();
     } else {
+      document.getElementById("guessColor").style.backgroundColor =
+        "rgb(178, 34, 34)";
       document.getElementById("fart").load();
       document.getElementById("fart").play();
     }
+    document.getElementById("guessColor").style.display = "block";
+    // No need to clear this timeout
+    // No memory leak because the div is located in App.js
+    this.guessColorToDisplayNone = setTimeout(() => {
+      document.getElementById("guessColor").style.display = "none";
+    }, 1100);
   };
 
   render() {
@@ -97,17 +107,19 @@ class Game extends Component {
 
     const displayCards =
       this.state.deck.length > 0
-        ? this.state.deck.map(card => {
-            return (
-              <img
-                onClick={this.onClick}
-                key={card}
-                id={card}
-                className="row-card"
-                src={require(`../../images/${card}.jpg`)}
-                alt={`${card}`}
-              />
-            );
+        ? this.state.deck.map((card, index) => {
+            if (index < 52) {
+              return (
+                <img
+                  onClick={this.onClick}
+                  key={card}
+                  id={card}
+                  className="row-card"
+                  src={require(`../../images/${card}.jpg`)}
+                  alt={`${card}`}
+                />
+              );
+            }
           })
         : null;
 

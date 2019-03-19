@@ -10,8 +10,9 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Navbar />
         <div className="App">
+          <div id="guessColor" className="guess-color" />
+          <Navbar />
           <section className="app-section">
             <Switch>
               <Route exact path="/" component={Dashboard} />
