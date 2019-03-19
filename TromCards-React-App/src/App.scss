@@ -1,0 +1,10 @@
+.App {
+  background-color: peru;
+  .app-section {
+    margin: 0 auto;
+    background: url("./images/greenfelt.jpg");
+    border: 24px ridge darkturquoise;
+    border-radius: 45px;
+    background-clip: border-box;
+  }
+}
