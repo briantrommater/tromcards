@@ -1,0 +1,35 @@
+.App {
+  background-color: peru;
+  .app-section {
+    margin: 0 auto;
+    background: url("./images/greenfelt.jpg");
+    border: 24px ridge darkturquoise;
+    border-radius: 45px;
+    background-clip: border-box;
+    @media all and (max-width: 756px) {
+      border: 12px ridge darkturquoise;
+    }
+  }
+  #guessColor {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: purple, $alpha: 0);
+    animation: guess 1.5s linear;
+  }
+}
+
+@keyframes guess {
+  0%,
+  70%,
+  100% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}

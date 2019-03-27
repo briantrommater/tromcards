@@ -1,0 +1,68 @@
+.Dashboard {
+  color: white;
+  text-align: center;
+  h1 {
+    margin: 0;
+
+    padding: 100px 0px;
+  }
+  .display-deck {
+    margin: 10px auto;
+
+    .single-card {
+      display: inline-block;
+      width: 7%;
+      margin: 2px;
+    }
+  }
+  .games {
+    .start {
+      height: 180px;
+      width: 300px;
+      border: 2px outset lightblue;
+      box-shadow: 9px 13px darkblue;
+      border-radius: 33px;
+      background: rgba(255, 255, 255, 0.726);
+      font-family: "Franklin Gothic Medium", Courier, monospace;
+      font-size: 48px;
+      font-weight: bold;
+
+      vertical-align: middle;
+      align-items: center;
+      outline: none;
+      color: rgb(28, 55, 173);
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .start:hover {
+      border: 4px solid rgb(52, 79, 230);
+      background: dodgerblue;
+      color: white;
+    }
+  }
+  .difficulty-buttons {
+    .select-difficulty {
+      margin: 4px 2px;
+      outline: none;
+      width: 15vw;
+      padding: 10px 0;
+      color: white;
+      font-weight: bolder;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+    }
+    .select-difficulty-active {
+      background-color: limegreen;
+    }
+    .select-difficulty-inactive {
+      background-color: red;
+    }
+  }
+
+  .countdown {
+    font-size: 56px;
+  }
+}

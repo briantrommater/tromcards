@@ -1,0 +1,23 @@
+.Navbar {
+  background-color: peru;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-title {
+    h1 {
+      margin: 0;
+      padding: 20px;
+      @media all and (min-width: 756px) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.Footer {
+  background-color: peru;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
