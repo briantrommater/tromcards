@@ -55,7 +55,7 @@ function club() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500 //set interval in milliseconds 
+        interval: 2250 //set interval in milliseconds 
     })
     //make game buttons disappear and go to carousel
     let theseDisappear = document.getElementsByClassName("begin");
@@ -80,7 +80,7 @@ function diamond() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -103,7 +103,7 @@ function heart() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -126,7 +126,7 @@ function spade() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -201,7 +201,7 @@ function number() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -224,7 +224,7 @@ function picture() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -249,7 +249,7 @@ function full() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -274,7 +274,7 @@ function twoDeck() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1500
+        interval: 2250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -321,7 +321,7 @@ function royalty() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 7
+        interval: 222
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
