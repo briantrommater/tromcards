@@ -151,7 +151,7 @@ function halfDeckR() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1000
+        interval: 1250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
@@ -177,7 +177,7 @@ function halfDeckB() {
     removeCard()
     $('.carousel').carousel('dispose')
     $('.carousel').carousel({
-        interval: 1000
+        interval: 1250
     })
     let theseDisappear = document.getElementsByClassName("begin");
         for (let thing of theseDisappear) {
