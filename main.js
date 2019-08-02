@@ -393,7 +393,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 function hourlySwitch(card) {
     let date = new Date();
     let hour = date.getHours();
-    if (hour > 11 || hour < 5) {
+    if (hour > 20 || hour < 5) {
         guessCard(card);
     }
     else {
