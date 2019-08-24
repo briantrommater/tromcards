@@ -378,7 +378,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 function hourlySwitch(card) {
     let date = new Date();
     let hour = date.getHours();
-    if (hour > 20 || hour < 5) {
+    if (hour > 18 || hour < 7) {
         guessCard(card);
     }
     else {
@@ -462,10 +462,10 @@ function guessCardSafe(card) {
     }
     else if (sec % 3 === 0) {
         document.body.style.background = "#2E4A62";
-        document.querySelector("#donkeykong").play();
+        document.querySelector("#pacman").play();
     }
     else if (sec % 5 === 0) {
-        document.body.style.background = "HotPink";
+        document.body.style.background = "blue";
         document.querySelector("#mario").play();
     }
     else if (sec % 11 === 0) {
@@ -474,7 +474,7 @@ function guessCardSafe(card) {
     }
     else {
         document.body.style.background = "#DC4C46";
-        document.querySelector("#pacman").play();
+        document.querySelector("#donkeykong").play();
     }
 }
 
