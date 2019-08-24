@@ -461,7 +461,7 @@ function guessCardSafe(card) {
         }, 2500);
     }
     else if (sec % 3 === 0) {
-        document.body.style.background = "#2E4A62";
+        document.body.style.background = "yellow";
         document.querySelector("#pacman").play();
     }
     else if (sec % 5 === 0) {
@@ -469,11 +469,11 @@ function guessCardSafe(card) {
         document.querySelector("#mario").play();
     }
     else if (sec % 11 === 0) {
-        document.body.style.background = "Sienna";
+        document.body.style.background = "red";
         document.querySelector("#fart8").play();
     }
     else {
-        document.body.style.background = "#DC4C46";
+        document.body.style.background = "orange";
         document.querySelector("#donkeykong").play();
     }
 }
