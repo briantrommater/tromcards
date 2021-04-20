@@ -6,4 +6,4 @@ Each game features a deck with one card missing.
 
 Click link below to play!
 
-https://briantrommater.github.io/tromcards/
+https://briantrommater.github.io/trommater/
