@@ -398,7 +398,7 @@ function guessCard(card) {
             location.reload(true);
         }, 3200);
     }
-    else if (sec % 3 === 0) {
+    /*else if (sec % 3 === 0) {
         document.body.style.background = "DodgerBlue";
         document.querySelector("#fart8").play();
     }
@@ -446,7 +446,7 @@ function guessCard(card) {
         document.body.style.background = "#00539C";
         document.querySelector("#fart1").play();
     }
-    
+    */
 }
 
 //professional fart-less mode :(
