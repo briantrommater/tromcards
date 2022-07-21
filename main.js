@@ -374,7 +374,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
             }
     }
 })
-
+/*
 function hourlySwitch(card) {
     let date = new Date();
     let hour = date.getHours();
@@ -384,7 +384,7 @@ function hourlySwitch(card) {
     else {
         guessCardSafe(card);
     }
-}
+}*/
 
 //get an integer 0-59
 //modulus to randomize
@@ -462,19 +462,19 @@ function guessCardSafe(card) {
     }
     else if (sec % 3 === 0) {
         document.body.style.background = "yellow";
-        document.querySelector("#pacman").play();
+        document.querySelector("#donkeykong").play();
     }
     else if (sec % 5 === 0) {
         document.body.style.background = "blue";
-        document.querySelector("#mario").play();
+        document.querySelector("#pacman").play();
     }
-    else if (sec % 11 === 0) {
+    else if (sec % 7 === 0) {
         document.body.style.background = "red";
-        document.querySelector("#fart8").play();
+        document.querySelector("#mario").play();
     }
     else {
         document.body.style.background = "orange";
-        document.querySelector("#donkeykong").play();
+        document.querySelector("#fart8").play();
     }
 }
 
