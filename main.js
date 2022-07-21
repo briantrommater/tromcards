@@ -460,21 +460,17 @@ function guessCardSafe(card) {
             location.reload(true);
         }, 2500);
     }
-    else if (sec % 3 === 0) {
+    else if (sec % 2 === 0) {
         document.body.style.background = "yellow";
-        document.querySelector("#donkeykong").play();
-    }
-    else if (sec % 5 === 0) {
-        document.body.style.background = "blue";
         document.querySelector("#pacman").play();
     }
-    else if (sec % 7 === 0) {
-        document.body.style.background = "red";
-        document.querySelector("#mario").play();
+    else if (sec % 3 === 0) {
+        document.body.style.background = "blue";
+        document.querySelector("#donkeykong").play();
     }
     else {
-        document.body.style.background = "orange";
-        document.querySelector("#fart8").play();
+        document.body.style.background = "red";
+        document.querySelector("#mario").play();
     }
 }
 
