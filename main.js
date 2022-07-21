@@ -374,17 +374,17 @@ $('.carousel').on('slid.bs.carousel', function (e) {
             }
     }
 })
-/*
+
 function hourlySwitch(card) {
     let date = new Date();
     let hour = date.getHours();
-    if (hour > 18 || hour < 7) {
+    if (hour > 24 || hour < 1) {
         guessCard(card);
     }
     else {
         guessCardSafe(card);
     }
-}*/
+}
 
 //get an integer 0-59
 //modulus to randomize
@@ -398,7 +398,7 @@ function guessCard(card) {
             location.reload(true);
         }, 3200);
     }
-    /*else if (sec % 3 === 0) {
+    else if (sec % 3 === 0) {
         document.body.style.background = "DodgerBlue";
         document.querySelector("#fart8").play();
     }
@@ -446,10 +446,10 @@ function guessCard(card) {
         document.body.style.background = "#00539C";
         document.querySelector("#fart1").play();
     }
-    */
+    
 }
 
-//professional fart-less mode :(
+//professional mode
 function guessCardSafe(card) {
     let date = new Date();
     let sec = date.getSeconds();
